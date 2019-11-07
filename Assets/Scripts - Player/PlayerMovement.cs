@@ -5,8 +5,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-	public CharacterController2D controller;
-	float horizon = 0f;
+	public PlayerController controller;
+	float horizontal = 0f;
+    float runningSpeed = 40f;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +17,15 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizon = Input.GetAxisRaw("Horizontal");
+        horizontal = Input.GetAxisRaw("Horizontal") * runningSpeed;
+        if(Input.GetButtonDown("Jump"))
+        {
+            jump = true;
+        }
     }
 
     void FixedUpdate()
     {
-    		controller.Move(horizontalMove * Time.fixedDeltaTime, false, false);
+    		controller.Move(horizontal * Time.fixedDeltaTime, false, false);
     }
 }
