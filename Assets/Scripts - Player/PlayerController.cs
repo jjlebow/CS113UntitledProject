@@ -26,6 +26,12 @@ public class PlayerController : MonoBehaviour
     //determines whether the player is facing right or not
     private bool facingRight = true;
     private Vector3 m_velocity = Vector3.zero;
+    private bool attacking = false;
+    private float attackTimer = 0;
+    private float attackCooldown = 0.3f;
+
+    //the actual hitbox for the attack
+    public Collider2D attackTrigger;
 
     [Header("Events")]
     [Space]
@@ -40,6 +46,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        attackTrigger.enabled = false;
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
         if(OnLandEvent == null)
             OnLandEvent = new UnityEvent();

@@ -199,9 +199,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.020074725}
+  m_Offset: {x: -0.0040094256, y: -0.044075876}
   serializedVersion: 2
-  m_Radius: 0.2678058
+  m_Radius: 0.16757026
 --- !u!50 &132301005
 Rigidbody2D:
   serializedVersion: 4
@@ -217,7 +217,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.12
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -235,16 +235,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 301ae36a737076b48bc81150d40e465c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 400
+  jumpForce: 200
   crouchSpeed: 0.36
-  movementSmoothing: 0.05
+  movementSmoothing: 0.1
   airControl: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 55
   groundCheck: {fileID: 2136952338}
   ceilingCheck: {fileID: 303894704}
-  crouchDisableCollider: {fileID: 0}
+  crouchDisableCollider: {fileID: 132301010}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -330,6 +330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 132301006}
+  runningSpeed: 27.5
 --- !u!61 &132301010
 BoxCollider2D:
   m_ObjectHideFlags: 0
