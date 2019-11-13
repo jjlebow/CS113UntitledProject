@@ -30,15 +30,17 @@ public class PlayerMovement : MonoBehaviour
         {
         	crouch = true;
         } 
-        else if(Input.GetKeyUp(KeyCode.S) && Input.GetKeyDown(KeyCode.DownArrow))
+        else if(Input.GetKeyUp(KeyCode.S) && Input.GetKeyUp(KeyCode.DownArrow))
         {
         	crouch = false;
         }
-        if(Input.GetKeyDown(KeyCode.E) && Input.GetKeyDown(KeyCode.DownArrow) && (controller.grounded == false) && !controller.CR_Running)
+        //this chain of if statements is used to determine which direction the attack is used in. GetKey is used instead so that we can read 
+        //multiple inputs at once
+        if((Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) && Input.GetKey(KeyCode.E) && (controller.grounded == false) && !controller.CR_Running)
         {
             controller.Attack("DOWN");
         }
-        else if(Input.GetKeyDown(KeyCode.E) && Input.GetKeyDown(KeyCode.UpArrow) && !controller.CR_Running)
+        else if((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) && Input.GetKey(KeyCode.E) &&!controller.CR_Running)
         {
             controller.Attack("UP");
         }
