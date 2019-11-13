@@ -16,10 +16,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform ceilingCheck;
     [SerializeField] private Collider2D crouchDisableCollider;
 
+    //tells us whether or not the player is grounded
+    [HideInInspector] public bool grounded;
     //Radius of the circle that determines if we are grounded or not
     const float groundedRadius = 0.2f;
-    //tells us whether or not the player is grounded
-    private bool grounded;
     //radius of the circle that determinds if the player is touching a ceiling or not
     const float ceilingRadius = 0.2f;
     private Rigidbody2D m_Rigidbody2D;
@@ -29,7 +29,9 @@ public class PlayerController : MonoBehaviour
 
     //variables for player attacks
     [HideInInspector] public bool CR_Running;
-    public Collider2D attackTrigger;
+    public Collider2D attackTriggerNeutral;
+    public Collider2D attackTriggerDown;
+    public Collider2D attackTriggerUp;
     private IEnumerator attacking;
     private float attackCooldown = 1.0f;
     private float attackTimer = 0.0f;
@@ -48,7 +50,9 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
-        attackTrigger.enabled = false;
+        attackTriggerNeutral.enabled = false;
+        attackTriggerUp.enabled = false;
+        attackTriggerDown.enabled = false;
         if(OnLandEvent == null)
             OnLandEvent = new UnityEvent();
 
@@ -144,9 +148,20 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public void Attack()
+    public void Attack(string s)
     {
-        attackTrigger.enabled = true;
+        if(s == "UP")
+        {
+            attackTriggerUp.enabled = true;
+        }
+        else if(s == "DOWN")
+        {
+            attackTriggerDown.enabled = true;
+        }
+        else
+        {
+            attackTriggerNeutral.enabled = true;
+        }
         attacking = attackTime();
         StartCoroutine(attacking);
         
@@ -164,7 +179,9 @@ public class PlayerController : MonoBehaviour
         }
         //the weapon hitbox deactivates and there is a cooldown before
         //the player is able to use it again
-        attackTrigger.enabled = false;
+        attackTriggerNeutral.enabled = false;
+        attackTriggerUp.enabled = false;
+        attackTriggerDown.enabled = false;
         while(attackTimer > 0f)
         {
             attackTimer -= Time.deltaTime;

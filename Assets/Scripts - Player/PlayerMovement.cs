@@ -34,11 +34,17 @@ public class PlayerMovement : MonoBehaviour
         {
         	crouch = false;
         }
-
-        if(Input.GetKeyDown(KeyCode.E) && !controller.CR_Running )
+        if(Input.GetKeyDown(KeyCode.E) && Input.GetKeyDown(KeyCode.DownArrow) && (controller.grounded == false) && !controller.CR_Running)
         {
-            controller.Attack();
-
+            controller.Attack("DOWN");
+        }
+        else if(Input.GetKeyDown(KeyCode.E) && Input.GetKeyDown(KeyCode.UpArrow) && !controller.CR_Running)
+        {
+            controller.Attack("UP");
+        }
+        else if(Input.GetKeyDown(KeyCode.E) && !controller.CR_Running)
+        {
+            controller.Attack("NEUTRAL");
         }
     }
 
