@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: twilight-tiles_7
+  m_Name: Terrain00
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 7452907181594168173, guid: 604b50f1aef2d694b8f1490d5d4fb589,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c6924a78e8cfab44b9302e0e4515b52, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
