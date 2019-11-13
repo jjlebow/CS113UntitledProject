@@ -192,9 +192,9 @@ public class PlayerController : MonoBehaviour
 
     private RaycastHit2D CheckRaycast(Vector2 direction)
     {
-        float directionOriginOffset = originOffset * (direction.x > 0 ? 1 : -1);
+        float directionOriginOffset = originOffset; //* (direction.y > 0 ? 1 : -1);
 
-        Vector2 startingPosition = new Vector2(transform.position.x + directionOriginOffset, transform.position.y);
+        Vector2 startingPosition = new Vector2(transform.position.x, transform.position.y);// + directionOriginOffset);
 
         Debug.DrawRay(startingPosition, direction, Color.red);
         return Physics2D.Raycast(startingPosition, direction, raycastMaxDistance);
@@ -202,14 +202,18 @@ public class PlayerController : MonoBehaviour
 
     private void RaycastCheckUpdate()
     {
-        Vector2 direction = new Vector2(1,0);
+        Vector2 direction = new Vector2(0,-1);
 
         RaycastHit2D hit = CheckRaycast(direction);
 
+        //edit this and make sure that we get some kind of positive feedback when
+        //this collider hits tagged ground. create and event out of this called
+        //landed event that allows us to do things every time the player lands. grounded
+        // = true when collisions occur
         if(hit.collider)
         {
             Debug.Log("Hit object");
-            Debug.DrawRay(transform.position, hit.point, Color.red, 3f);
+            //Debug.DrawRay(transform.position, hit.point, Color.red);
         }
     }
 
