@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform ceilingCheck;
     [SerializeField] private Collider2D crouchDisableCollider;
 
+    //determines how many jumps the player has
+    public int numJumps;
+
     //tells us whether or not the player is grounded
     [HideInInspector] public bool grounded;
     //Radius of the circle that determines if we are grounded or not
@@ -35,17 +38,22 @@ public class PlayerController : MonoBehaviour
     private IEnumerator attacking;
     private float attackCooldown = 1.0f;
     private float attackTimer = 0.0f;
-    
+    private float raycastMaxDistance = 10f;
+    /*
     [Header("Events")]
     [Space]
+    */
 
-    public UnityEvent OnLandEvent;
+    /*public UnityEvent OnLandEvent;
 
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> {}
 
     public BoolEvent OnCrouchEvent;
+    */
     private bool wasCrouching = false;
+    private float originOffset = 0.5f;
+    //Vector3 downVector = transform.TransformDirection(Vector3.down);
 
     private void Awake()
     {
@@ -53,15 +61,19 @@ public class PlayerController : MonoBehaviour
         attackTriggerNeutral.enabled = false;
         attackTriggerUp.enabled = false;
         attackTriggerDown.enabled = false;
+        /*
         if(OnLandEvent == null)
             OnLandEvent = new UnityEvent();
 
         if(OnCrouchEvent == null)
             OnCrouchEvent = new BoolEvent();
+            */
     }
 
     private void FixedUpdate()
     {
+        RaycastCheckUpdate();
+        /*
         bool wasGrounded = grounded;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, groundedRadius, whatIsGround);
         for(int i = 0; i < colliders.Length; ++i)
@@ -69,10 +81,11 @@ public class PlayerController : MonoBehaviour
             if(colliders[i].gameObject != gameObject)
             {
                 grounded = true;
-                if(!wasGrounded)
-                    OnLandEvent.Invoke();
+                //if(!wasGrounded)
+                    //OnLandEvent.Invoke();
             }
         }
+        */
     }
 
     public void Move(float move, bool crouch, bool jump)
@@ -93,7 +106,7 @@ public class PlayerController : MonoBehaviour
                 if(!wasCrouching)
                 {
                     wasCrouching = true;
-                    OnCrouchEvent.Invoke(true);
+                    //OnCrouchEvent.Invoke(true);
                 }
 
                 //Reduce speed my the crouchSpeed multiplier
@@ -110,7 +123,7 @@ public class PlayerController : MonoBehaviour
                 if(wasCrouching)
                 {
                     wasCrouching = false;
-                    OnCrouchEvent.Invoke(false);
+                    //OnCrouchEvent.Invoke(false);
                 }
             }
 
@@ -131,8 +144,12 @@ public class PlayerController : MonoBehaviour
         }
         if(grounded && jump)
         {
-            grounded = false;
-            m_Rigidbody2D.AddForce(new Vector2(0f, jumpForce));
+            Debug.Log("SUCCESSFUL JUMP");
+            Jump();
+        }
+        else if(jump)
+        {
+            Debug.Log("NOT GROUNDED");
         }
     }
 
@@ -146,6 +163,12 @@ public class PlayerController : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
 
+    }
+
+    public void Jump()
+    {
+        grounded = false;
+        m_Rigidbody2D.AddForce(new Vector2(0f, jumpForce));
     }
 
     public void Attack(string s)
@@ -165,6 +188,29 @@ public class PlayerController : MonoBehaviour
         attacking = attackTime();
         StartCoroutine(attacking);
         
+    }
+
+    private RaycastHit2D CheckRaycast(Vector2 direction)
+    {
+        float directionOriginOffset = originOffset * (direction.x > 0 ? 1 : -1);
+
+        Vector2 startingPosition = new Vector2(transform.position.x + directionOriginOffset, transform.position.y);
+
+        Debug.DrawRay(startingPosition, direction, Color.red);
+        return Physics2D.Raycast(startingPosition, direction, raycastMaxDistance);
+    }
+
+    private void RaycastCheckUpdate()
+    {
+        Vector2 direction = new Vector2(1,0);
+
+        RaycastHit2D hit = CheckRaycast(direction);
+
+        if(hit.collider)
+        {
+            Debug.Log("Hit object");
+            Debug.DrawRay(transform.position, hit.point, Color.red, 3f);
+        }
     }
 
     public IEnumerator attackTime()
