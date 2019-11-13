@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
 
     //initialized private variables that can be edited in the editor
-    [SerializeField] private float jumpForce = 400f;
+    [SerializeField] private float jumpForce;
     [Range(0,1)] [SerializeField] private float crouchSpeed = .36f;
     [Range(0, 0.3f)][SerializeField] private float movementSmoothing = 0.05f;
     [SerializeField] private bool airControl = false;
@@ -26,13 +26,14 @@ public class PlayerController : MonoBehaviour
     //determines whether the player is facing right or not
     private bool facingRight = true;
     private Vector3 m_velocity = Vector3.zero;
-    private bool attacking = false;
-    private float attackTimer = 0;
-    private float attackCooldown = 0.3f;
 
-    //the actual hitbox for the attack
+    //variables for player attacks
+    [HideInInspector] public bool CR_Running;
     public Collider2D attackTrigger;
-
+    private IEnumerator attacking;
+    private float attackCooldown = 1.0f;
+    private float attackTimer = 0.0f;
+    
     [Header("Events")]
     [Space]
 
@@ -46,8 +47,8 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        attackTrigger.enabled = false;
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
+        attackTrigger.enabled = false;
         if(OnLandEvent == null)
             OnLandEvent = new UnityEvent();
 
@@ -141,6 +142,36 @@ public class PlayerController : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
 
+    }
+
+    public void Attack()
+    {
+        attackTrigger.enabled = true;
+        attacking = attackTime();
+        StartCoroutine(attacking);
+        
+    }
+
+    public IEnumerator attackTime()
+    {
+        CR_Running = true;
+        attackTimer = attackCooldown;
+        //this is the amount of time that the weapon hitbox is active
+        while(attackTimer > 0.7f)
+        {
+            attackTimer -= Time.deltaTime;
+            yield return null;
+        }
+        //the weapon hitbox deactivates and there is a cooldown before
+        //the player is able to use it again
+        attackTrigger.enabled = false;
+        while(attackTimer > 0f)
+        {
+            attackTimer -= Time.deltaTime;
+            yield return null;
+        }
+        CR_Running = false;
+        
     }
 
 }

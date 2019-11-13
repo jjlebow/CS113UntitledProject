@@ -10,8 +10,9 @@ public class PlayerMovement : MonoBehaviour
     public float runningSpeed = 20f;
     bool jump = false;
     bool crouch = false;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         
     }
@@ -24,12 +25,20 @@ public class PlayerMovement : MonoBehaviour
         {
             jump = true;
         }
-        if(Input.GetButtonDown("Crouch"))
+
+        if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
         	crouch = true;
-        } else if(Input.GetButtonUp("Crouch"))
+        } 
+        else if(Input.GetKeyUp(KeyCode.S) && Input.GetKeyDown(KeyCode.DownArrow))
         {
         	crouch = false;
+        }
+
+        if(Input.GetKeyDown(KeyCode.E) && !controller.CR_Running )
+        {
+            controller.Attack();
+
         }
     }
 
