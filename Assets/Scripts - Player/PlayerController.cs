@@ -38,7 +38,9 @@ public class PlayerController : MonoBehaviour
     private IEnumerator attacking;
     private float attackCooldown = 1.0f;
     private float attackTimer = 0.0f;
-    private float raycastMaxDistance = 10f;
+
+    //this adjusts the length for the raycast
+    private float raycastMaxDistance = 1f;
     /*
     [Header("Events")]
     [Space]
@@ -52,7 +54,6 @@ public class PlayerController : MonoBehaviour
     public BoolEvent OnCrouchEvent;
     */
     private bool wasCrouching = false;
-    private float originOffset = 0.5f;
     //Vector3 downVector = transform.TransformDirection(Vector3.down);
 
     private void Awake()
@@ -72,7 +73,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        RaycastCheckUpdate();
+        RaycastCheckUpdateGround();
         /*
         bool wasGrounded = grounded;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, groundedRadius, whatIsGround);
@@ -145,6 +146,7 @@ public class PlayerController : MonoBehaviour
         if(grounded && jump)
         {
             Debug.Log("SUCCESSFUL JUMP");
+            grounded = false;
             Jump();
         }
         else if(jump)
@@ -190,30 +192,36 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    private RaycastHit2D CheckRaycast(Vector2 direction)
+    //this is for creating the raycast given a direction, and returning that raycast
+    private RaycastHit2D CheckRaycastGround(Vector2 direction)
     {
-        float directionOriginOffset = originOffset; //* (direction.y > 0 ? 1 : -1);
-
         Vector2 startingPosition = new Vector2(transform.position.x, transform.position.y);// + directionOriginOffset);
-
-        Debug.DrawRay(startingPosition, direction, Color.red);
-        return Physics2D.Raycast(startingPosition, direction, raycastMaxDistance);
+        //the final argument is a layer mask telling the raycast to only pay attention to layer 10 (ground)
+        return Physics2D.Raycast(startingPosition, direction, raycastMaxDistance, 1 << 10);
     }
 
-    private void RaycastCheckUpdate()
+    //This function is called in fixed update and constantly checks to see if there is ground
+    private void RaycastCheckUpdateGround()
     {
         Vector2 direction = new Vector2(0,-1);
 
-        RaycastHit2D hit = CheckRaycast(direction);
+        RaycastHit2D hit = CheckRaycastGround(direction);
 
         //edit this and make sure that we get some kind of positive feedback when
         //this collider hits tagged ground. create and event out of this called
         //landed event that allows us to do things every time the player lands. grounded
         // = true when collisions occur
+        //Debug.DrawRay(transform.position, direction, Color.red);
         if(hit.collider)
         {
-            Debug.Log("Hit object");
-            //Debug.DrawRay(transform.position, hit.point, Color.red);
+            //Debug.Log(hit.collider.gameObject.tag);
+            grounded = true;
+            
+        }
+        else
+        {
+            //Debug.Log("nothing");
+            grounded = false;
         }
     }
 

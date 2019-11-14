@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 268231377}
   m_Layer: 10
   m_Name: Walkable Tiles
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -750,9 +750,9 @@ GameObject:
   - component: {fileID: 1389644820}
   - component: {fileID: 1389644822}
   - component: {fileID: 1389644821}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Decorative Tiles
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -983,7 +983,7 @@ PrefabInstance:
     - target: {fileID: 7087736515704205654, guid: 2839d03bac37062408494bf9a453acc9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.87
+      value: -0.95
       objectReference: {fileID: 0}
     - target: {fileID: 7087736515704205654, guid: 2839d03bac37062408494bf9a453acc9,
         type: 3}
@@ -1089,6 +1089,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_GravityScale
       value: 2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087736515704205643, guid: 2839d03bac37062408494bf9a453acc9,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7087736515704205652, guid: 2839d03bac37062408494bf9a453acc9,
         type: 3}
