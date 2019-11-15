@@ -25,6 +25,11 @@ public class PlayerMovement : MonoBehaviour
         {
             jump = true;
         }
+        else if(Input.GetButtonUp("Jump"))
+        {
+            //Debug.Log("here");
+            //jump = false;
+        }
 
         if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
@@ -52,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+            Debug.Log(jump);
     		controller.Move(horizontal * Time.fixedDeltaTime, crouch, jump);
     		jump = false;
     }

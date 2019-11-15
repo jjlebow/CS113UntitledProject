@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
 
     //determines how many jumps the player has
     public int extraJumps;
+    public float jumpTime;
+    private float jumpTimeCounter;
     private int availJumps;
 
     //tells us whether or not the player is grounded
@@ -99,6 +101,7 @@ public class PlayerController : MonoBehaviour
         */
     }
 
+
     public void Move(float move, bool crouch, bool jump)
     {
         if(!crouch)
@@ -156,13 +159,17 @@ public class PlayerController : MonoBehaviour
         if(grounded && jump)
         {
             Debug.Log("SUCCESSFUL JUMP");
+            //jumpTimeCounter = jumpTime;
             Jump();
         }
         else if(!grounded && availJumps > 0 && jump)
         {
+            //if(jumpTimeCounter > 0)
+            //{
             Jump();
             --availJumps;
             Debug.Log("extraJump");
+            //}
         }
         else if(jump)
         {
@@ -185,6 +192,8 @@ public class PlayerController : MonoBehaviour
     public void Jump()
     {
         m_Rigidbody2D.AddForce(new Vector2(0f, jumpForce));
+        //jumpTimeCounter -= Time.deltaTime;
+        //m_Rigidbody2D.AddForce(new Vector2(0f, jumpForce));
     }
 
     public void Attack(string s)
