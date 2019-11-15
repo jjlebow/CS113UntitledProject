@@ -1038,7 +1038,7 @@ PrefabInstance:
     - target: {fileID: 7087736515704205640, guid: 2839d03bac37062408494bf9a453acc9,
         type: 3}
       propertyPath: jumpForce
-      value: 425
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 7087736515704205640, guid: 2839d03bac37062408494bf9a453acc9,
         type: 3}
@@ -1080,6 +1080,16 @@ PrefabInstance:
       propertyPath: attackTriggerUp
       value: 
       objectReference: {fileID: 1341520053}
+    - target: {fileID: 7087736515704205640, guid: 2839d03bac37062408494bf9a453acc9,
+        type: 3}
+      propertyPath: numJumps
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087736515704205640, guid: 2839d03bac37062408494bf9a453acc9,
+        type: 3}
+      propertyPath: extraJumps
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7087736515704205643, guid: 2839d03bac37062408494bf9a453acc9,
         type: 3}
       propertyPath: m_CollisionDetection
@@ -1088,7 +1098,7 @@ PrefabInstance:
     - target: {fileID: 7087736515704205643, guid: 2839d03bac37062408494bf9a453acc9,
         type: 3}
       propertyPath: m_GravityScale
-      value: 2.25
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 7087736515704205643, guid: 2839d03bac37062408494bf9a453acc9,
         type: 3}

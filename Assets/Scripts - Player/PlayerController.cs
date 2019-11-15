@@ -2,6 +2,7 @@
 using UnityEngine.Events;
 using System.Collections.Generic;
 using UnityEngine;
+using System; 
 
 public class PlayerController : MonoBehaviour
 {
@@ -16,8 +17,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform ceilingCheck;
     [SerializeField] private Collider2D crouchDisableCollider;
 
+    public delegate void LandedDelegate();
+    public event LandedDelegate landedEvent;
+
     //determines how many jumps the player has
-    public int numJumps;
+    public int extraJumps;
+    private int availJumps;
 
     //tells us whether or not the player is grounded
     [HideInInspector] public bool grounded;
@@ -41,10 +46,11 @@ public class PlayerController : MonoBehaviour
 
     //this adjusts the length for the raycast
     private float raycastMaxDistance = 1f;
-    /*
-    [Header("Events")]
-    [Space]
-    */
+    private Vector2 direction = new Vector2(0,-1);
+    
+    //[Header("Events")]
+    //[Space]
+    
 
     /*public UnityEvent OnLandEvent;
 
@@ -58,10 +64,13 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        availJumps = extraJumps;
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
         attackTriggerNeutral.enabled = false;
         attackTriggerUp.enabled = false;
         attackTriggerDown.enabled = false;
+        landedEvent += attackCancel;
+        landedEvent += jumpReset;
         /*
         if(OnLandEvent == null)
             OnLandEvent = new UnityEvent();
@@ -73,6 +82,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //Debug.Log(grounded);
         RaycastCheckUpdateGround();
         /*
         bool wasGrounded = grounded;
@@ -146,8 +156,13 @@ public class PlayerController : MonoBehaviour
         if(grounded && jump)
         {
             Debug.Log("SUCCESSFUL JUMP");
-            grounded = false;
             Jump();
+        }
+        else if(!grounded && availJumps > 0 && jump)
+        {
+            Jump();
+            --availJumps;
+            Debug.Log("extraJump");
         }
         else if(jump)
         {
@@ -169,7 +184,6 @@ public class PlayerController : MonoBehaviour
 
     public void Jump()
     {
-        grounded = false;
         m_Rigidbody2D.AddForce(new Vector2(0f, jumpForce));
     }
 
@@ -203,7 +217,6 @@ public class PlayerController : MonoBehaviour
     //This function is called in fixed update and constantly checks to see if there is ground
     private void RaycastCheckUpdateGround()
     {
-        Vector2 direction = new Vector2(0,-1);
 
         RaycastHit2D hit = CheckRaycastGround(direction);
 
@@ -212,17 +225,41 @@ public class PlayerController : MonoBehaviour
         //landed event that allows us to do things every time the player lands. grounded
         // = true when collisions occur
         //Debug.DrawRay(transform.position, direction, Color.red);
-        if(hit.collider)
+        if(hit.collider && grounded == false)
         {
             //Debug.Log(hit.collider.gameObject.tag);
+            //Debug.Log("here");
             grounded = true;
+            if(landedEvent != null)
+                landedEvent();
+
             
         }
-        else
+        else if(!hit.collider)
         {
             //Debug.Log("nothing");
             grounded = false;
         }
+    }
+
+    private void attackCancel()
+    {
+        if(CR_Running)
+        {
+            Debug.Log("FJDLSJFKDSF");
+            CR_Running = false;
+            attackTriggerNeutral.enabled = false;
+            attackTriggerUp.enabled = false;
+            attackTriggerDown.enabled = false;
+            StopCoroutine(attacking);
+        }
+        
+
+    }
+
+    private void jumpReset()
+    {
+        availJumps = extraJumps;
     }
 
     public IEnumerator attackTime()
