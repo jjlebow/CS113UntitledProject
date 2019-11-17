@@ -101,8 +101,25 @@ public class PlayerController : MonoBehaviour
         */
     }
 
+    void Update()
+    {
+        if(grounded == true && Input.GetKeyDown(KeyCode.Space))
+        {
+            jumpTimeCounter = jumpTime;
+            Jump();
+        }
+        if(Input.GetKey(KeyCode.Space))
+        {
+            if(jumpTimeCounter > 0)
+            {
+                Jump();
+                jumpTimeCounter -= Time.deltaTime;
+            }
+        }
+    }
 
-    public void Move(float move, bool crouch, bool jump)
+
+    public void Move(float move, bool crouch, bool jump, bool isJumping)
     {
         if(!crouch)
         {
@@ -156,13 +173,33 @@ public class PlayerController : MonoBehaviour
                 Flip();
             }
         }
+        //This is called when the player jumps and they are grounded
         if(grounded && jump)
         {
+            isJumping = true;
+            jumpTimeCounter = jumpTime;
             Debug.Log("SUCCESSFUL JUMP");
             //jumpTimeCounter = jumpTime;
             Jump();
         }
-        else if(!grounded && availJumps > 0 && jump)
+
+        //This is when the jump button is being held down
+        if(isJumping)
+        {
+            Debug.Log("HERE");
+            //This confirms that the timer for the jump does not exceed
+            if(jumpTimeCounter > 0)
+            {
+                Jump();
+                jumpTimeCounter -= Time.deltaTime;
+            }
+            else
+                isJumping = false;
+        }
+        //this is called when the player is not grounded but still has 
+        //available jumps(double jump)
+        /*
+        if(!grounded && availJumps > 0 && jump)
         {
             //if(jumpTimeCounter > 0)
             //{
@@ -171,7 +208,9 @@ public class PlayerController : MonoBehaviour
             Debug.Log("extraJump");
             //}
         }
-        else if(jump)
+        */
+        //This is called when the player tries to jump but is not allowed to
+        if(jump)
         {
             Debug.Log("NOT GROUNDED");
         }
@@ -269,6 +308,7 @@ public class PlayerController : MonoBehaviour
     private void jumpReset()
     {
         availJumps = extraJumps;
+        
     }
 
     public IEnumerator attackTime()

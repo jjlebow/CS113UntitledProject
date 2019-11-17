@@ -8,8 +8,10 @@ public class PlayerMovement : MonoBehaviour
 	public PlayerController controller;
 	float horizontal = 0f;
     public float runningSpeed = 20f;
+    public bool isJumping = false;
     bool jump = false;
     bool crouch = false;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -23,10 +25,12 @@ public class PlayerMovement : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal") * runningSpeed;
         if(Input.GetButtonDown("Jump"))
         {
+            isJumping = true;
             jump = true;
         }
         else if(Input.GetButtonUp("Jump"))
         {
+            isJumping = false;
             //Debug.Log("here");
             //jump = false;
         }
@@ -58,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
             Debug.Log(jump);
-    		controller.Move(horizontal * Time.fixedDeltaTime, crouch, jump);
+    		controller.Move(horizontal * Time.fixedDeltaTime, crouch, jump, isJumping);
     		jump = false;
     }
 }
