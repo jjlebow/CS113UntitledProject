@@ -45,15 +45,15 @@ public class PlayerMovement : MonoBehaviour
         }
         //this chain of if statements is used to determine which direction the attack is used in. GetKey is used instead so that we can read 
         //multiple inputs at once
-        if((Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) && Input.GetKey(KeyCode.E) && (controller.grounded == false) && !controller.CR_Running)
+        if((Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) && Input.GetKey(KeyCode.K) && (controller.grounded == false) && !controller.CR_Running)
         {
             controller.Attack("DOWN");
         }
-        else if((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) && Input.GetKey(KeyCode.E) &&!controller.CR_Running)
+        else if((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) && Input.GetKey(KeyCode.K) &&!controller.CR_Running)
         {
             controller.Attack("UP");
         }
-        else if(Input.GetKeyDown(KeyCode.E) && !controller.CR_Running)
+        else if(Input.GetKeyDown(KeyCode.K) && !controller.CR_Running)
         {
             controller.Attack("NEUTRAL");
         }
@@ -61,7 +61,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-            Debug.Log(jump);
     		controller.Move(horizontal * Time.fixedDeltaTime, crouch, jump, isJumping);
     		jump = false;
     }

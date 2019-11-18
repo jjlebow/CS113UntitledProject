@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     //determines whether the player is facing right or not
     private bool facingRight = true;
     private Vector3 m_velocity = Vector3.zero;
+    private float prevPosition;
 
     //variables for player attacks
     [HideInInspector] public bool CR_Running;
@@ -43,12 +44,16 @@ public class PlayerController : MonoBehaviour
     public Collider2D attackTriggerDown;
     public Collider2D attackTriggerUp;
     private IEnumerator attacking;
-    private float attackCooldown = 1.0f;
+    private float attackCooldown = 0.7f;
     private float attackTimer = 0.0f;
 
-    //this adjusts the length for the raycast
-    private float raycastMaxDistance = 1f;
+    //this adjusts the length for the raycast that recognizes if grounded or not
+    private float raycastMaxDistance = 1.15f;
     private Vector2 direction = new Vector2(0,-1);
+
+    public float fallMultiplier;
+    public float lowJumpMultiplier;
+    private bool isFalling;
     
     //[Header("Events")]
     //[Space]
@@ -73,6 +78,7 @@ public class PlayerController : MonoBehaviour
         attackTriggerDown.enabled = false;
         landedEvent += attackCancel;
         landedEvent += jumpReset;
+        prevPosition = transform.position.y;
         /*
         if(OnLandEvent == null)
             OnLandEvent = new UnityEvent();
@@ -84,7 +90,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Debug.Log(grounded);
+        AerialPhysics();
         RaycastCheckUpdateGround();
         /*
         bool wasGrounded = grounded;
@@ -103,6 +109,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        /*
         if(grounded == true && Input.GetKeyDown(KeyCode.Space))
         {
             jumpTimeCounter = jumpTime;
@@ -116,120 +123,148 @@ public class PlayerController : MonoBehaviour
                 jumpTimeCounter -= Time.deltaTime;
             }
         }
+        */
     }
 
 
     public void Move(float move, bool crouch, bool jump, bool isJumping)
     {
-        if(!crouch)
+        if(!CR_Running)
         {
-            if(Physics2D.OverlapCircle(ceilingCheck.position, ceilingRadius, whatIsGround))
+            if(!crouch)
             {
-                crouch = true;
-            }
-        }
-
-        //can only control the player if grounded or airControl is on
-        if(grounded || airControl)
-        {
-            if(crouch)
-            {
-                if(!wasCrouching)
+                if(Physics2D.OverlapCircle(ceilingCheck.position, ceilingRadius, whatIsGround))
                 {
-                    wasCrouching = true;
-                    //OnCrouchEvent.Invoke(true);
-                }
-
-                //Reduce speed my the crouchSpeed multiplier
-                move *= crouchSpeed;
-
-                if(crouchDisableCollider != null)
-                    crouchDisableCollider.enabled = false;
-            }
-            else
-            {
-                if(crouchDisableCollider != null)
-                    crouchDisableCollider.enabled = true;
-
-                if(wasCrouching)
-                {
-                    wasCrouching = false;
-                    //OnCrouchEvent.Invoke(false);
+                    crouch = true;
                 }
             }
 
-            //finding target velocity to move the player
-            Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
-            //this is for smoothing out movement
-            m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_velocity, movementSmoothing);
+            //can only control the player if grounded or airControl is on
+            if(grounded || airControl)
+            {
+                if(crouch)
+                {
+                    if(!wasCrouching)
+                    {
+                        wasCrouching = true;
+                        //OnCrouchEvent.Invoke(true);
+                    }
 
-            //if the input is moving the player to the right and the player is facing left
-            if(move > 0 && !facingRight)
-            {
-                Flip();
+                    //Reduce speed my the crouchSpeed multiplier
+                    move *= crouchSpeed;
+
+                    if(crouchDisableCollider != null)
+                        crouchDisableCollider.enabled = false;
+                }
+                else
+                {
+                    if(crouchDisableCollider != null)
+                        crouchDisableCollider.enabled = true;
+
+                    if(wasCrouching)
+                    {
+                        wasCrouching = false;
+                        //OnCrouchEvent.Invoke(false);
+                    }
+                }
+
+                //finding target velocity to move the player
+                Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
+                //this is for smoothing out movement
+                m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_velocity, movementSmoothing);
+
+                //if the input is moving the player to the right and the player is facing left
+                if(move > 0 && !facingRight)
+                {
+                    Flip();
+                }
+                else if(move < 0 && facingRight)
+                {
+                    Flip();
+                }
             }
-            else if(move < 0 && facingRight)
+            //This is called when the player jumps and they are grounded
+            if(grounded && jump)
             {
-                Flip();
+                isJumping = true;
+                jumpTimeCounter = jumpTime;
+                //Debug.Log("SUCCESSFUL JUMP");
+                //jumpTimeCounter = jumpTime;
+                Jump();
+            }
+            //Debug.Log("JUMPTIME COUNT: " + jumpTimeCounter);
+            //This is when the jump button is being held down
+            //Debug.Log("isJumping" + isJumping);
+            if(isJumping)
+            {
+                //Debug.Log("HERE");
+                //This confirms that the timer for the jump does not exceed
+                if(jumpTimeCounter > 0)
+                {
+                    Jump();
+                    jumpTimeCounter -= Time.deltaTime;
+                }
+                else
+                //Debug.Log("Timer is UP");
+                    isJumping = false;
+                    
+            }
+            //this is called when the player is not grounded but still has 
+            //available jumps(double jump)
+            /*
+            if(!grounded && availJumps > 0 && jump)
+            {
+                //if(jumpTimeCounter > 0)
+                //{
+                Jump();
+                --availJumps;
+                Debug.Log("extraJump");
+                //}
+            }
+            */
+            //This is called when the player tries to jump but is not allowed to
+            if(jump)
+            {
+                Debug.Log("NOT GROUNDED");
             }
         }
-        //This is called when the player jumps and they are grounded
-        if(grounded && jump)
-        {
-            isJumping = true;
-            jumpTimeCounter = jumpTime;
-            Debug.Log("SUCCESSFUL JUMP");
-            //jumpTimeCounter = jumpTime;
-            Jump();
-        }
+    }
 
-        //This is when the jump button is being held down
-        if(isJumping)
+    private void AerialPhysics()
+    {
+        //Debug.Log("VELOCITY " + m_Rigidbody2D.velocity.y);
+        if(m_Rigidbody2D.velocity.y < 0)
         {
             Debug.Log("HERE");
-            //This confirms that the timer for the jump does not exceed
-            if(jumpTimeCounter > 0)
-            {
-                Jump();
-                jumpTimeCounter -= Time.deltaTime;
-            }
-            else
-                isJumping = false;
+            m_Rigidbody2D.velocity += (Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime);
         }
-        //this is called when the player is not grounded but still has 
-        //available jumps(double jump)
-        /*
-        if(!grounded && availJumps > 0 && jump)
+        else if(m_Rigidbody2D.velocity.y > 0 && !Input.GetButtonDown("Jump"))
         {
-            //if(jumpTimeCounter > 0)
-            //{
-            Jump();
-            --availJumps;
-            Debug.Log("extraJump");
-            //}
-        }
-        */
-        //This is called when the player tries to jump but is not allowed to
-        if(jump)
-        {
-            Debug.Log("NOT GROUNDED");
+            Debug.Log("there");
+            m_Rigidbody2D.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
     }
 
     private void Flip()
     {
-        //switches the way the player is facing
-        facingRight = !facingRight;
+        if(!CR_Running)
+        {
+            //switches the way the player is facing
+            facingRight = !facingRight;
 
-        //multiplies the players x local scale by -1
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
+            //multiplies the players x local scale by -1
+            Vector3 theScale = transform.localScale;
+            theScale.x *= -1;
+            transform.localScale = theScale;
+        }
 
     }
 
     public void Jump()
     {
+        
+
+        
         m_Rigidbody2D.AddForce(new Vector2(0f, jumpForce));
         //jumpTimeCounter -= Time.deltaTime;
         //m_Rigidbody2D.AddForce(new Vector2(0f, jumpForce));
@@ -252,6 +287,17 @@ public class PlayerController : MonoBehaviour
         attacking = attackTime();
         StartCoroutine(attacking);
         
+    }
+
+    private bool IsFalling()
+    {
+        if(transform.position.y < prevPosition)
+        {
+            prevPosition = transform.position.y;
+            return true;
+        }
+        else
+            return false;
     }
 
     //this is for creating the raycast given a direction, and returning that raycast
@@ -308,6 +354,7 @@ public class PlayerController : MonoBehaviour
     private void jumpReset()
     {
         availJumps = extraJumps;
+        //jumpTimeCounter = jumpTime;
         
     }
 
@@ -316,7 +363,7 @@ public class PlayerController : MonoBehaviour
         CR_Running = true;
         attackTimer = attackCooldown;
         //this is the amount of time that the weapon hitbox is active
-        while(attackTimer > 0.7f)
+        while(attackTimer > 0.5f)
         {
             attackTimer -= Time.deltaTime;
             yield return null;
