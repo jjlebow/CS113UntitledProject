@@ -1098,7 +1098,7 @@ PrefabInstance:
     - target: {fileID: 7087736515704205640, guid: 2839d03bac37062408494bf9a453acc9,
         type: 3}
       propertyPath: fallMultiplier
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7087736515704205640, guid: 2839d03bac37062408494bf9a453acc9,
         type: 3}
