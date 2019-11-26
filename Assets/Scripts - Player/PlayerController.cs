@@ -54,6 +54,9 @@ public class PlayerController : MonoBehaviour
     public float lowJumpMultiplier;
     private bool isFalling;
 
+    public int health;
+    [HideInInspector] public bool isDead;
+
     private bool wasCrouching = false;
     private float currentMomentumX;
 
@@ -66,6 +69,7 @@ public class PlayerController : MonoBehaviour
         attackTriggerDown.enabled = false;
         landedEvent += attackCancel;
         landedEvent += jumpReset;
+        isDead = false;
     }
 
     private void FixedUpdate()
@@ -75,6 +79,10 @@ public class PlayerController : MonoBehaviour
             AerialPhysics();
         }
         RaycastCheckUpdateGround();
+        if(health <= 0)
+        {
+            isDead = true;
+        }
     }
 
     void Update()
@@ -284,6 +292,17 @@ public class PlayerController : MonoBehaviour
             yield return null;
         }
         CR_Running = false;
+    }
+
+    public IEnumerator Knockback(float knockDur, float knockbackPwr, Vector3 knockbackDir)
+    {
+        float timer = 0;
+        while(knockDur > timer)
+        {
+            timer += Time.deltaTime;
+            m_Rigidbody2D.AddForce(new Vector3(knockbackDir.x * knockbackPwr, knockbackDir.y * knockbackPwr, transform.position.z));
+        }
+        yield return 0;
     }
 }
 
