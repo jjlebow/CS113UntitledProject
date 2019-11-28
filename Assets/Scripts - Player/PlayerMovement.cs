@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-	public PlayerController controller;
+	private PlayerController controller;
 	float horizontal = 0f;
     public float runningSpeed = 20f;
     public bool isJumping = false;
@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        
+        controller = GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -43,20 +43,7 @@ public class PlayerMovement : MonoBehaviour
         {
         	crouch = false;
         }
-        //this chain of if statements is used to determine which direction the attack is used in. GetKey is used instead so that we can read 
-        //multiple inputs at once
-        if((Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) && Input.GetKey(KeyCode.K) && (controller.grounded == false) && !controller.CR_Running)
-        {
-            controller.Attack("DOWN");
-        }
-        else if((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) && Input.GetKey(KeyCode.K) &&!controller.CR_Running)
-        {
-            controller.Attack("UP");
-        }
-        else if(Input.GetKeyDown(KeyCode.K) && !controller.CR_Running)
-        {
-            controller.Attack("NEUTRAL");
-        }
+
     }
 
     void FixedUpdate()

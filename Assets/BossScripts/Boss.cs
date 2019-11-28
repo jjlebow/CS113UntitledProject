@@ -13,14 +13,13 @@ public class Boss : MonoBehaviour {
     //public Animator camAnim;
     public Slider healthBar;
     private Animator anim;
-    public bool isDead;
+    [HideInInspector] public bool isDead;
     public PlayerController player;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-
     }
 
     private void Update()
@@ -47,13 +46,23 @@ public class Boss : MonoBehaviour {
     {
         // deal the player damage ! 
         if (col.gameObject.CompareTag("Player") && isDead == false) {
-            Debug.Log("Here");
+            Debug.Log("Player has taken Damage: " + damage);
+            player.PlayerDamage(damage);
             //if (timeBtwDamage <= 0) {
                 //camAnim.SetTrigger("shake");
-                player.health -= damage;
                 //send player flying back
-                StartCoroutine(player.Knockback(0.02f, 250 , player.transform.position));
+                
             //}
         } 
+        else if(col.gameObject.CompareTag("Weapon") && isDead == false)
+        {
+            Debug.Log("Boss has taken Damage: " + player.strength);
+            BossDamage(player.strength);
+        }
+    }
+
+    public void BossDamage(int damage)
+    {
+        health -= damage;
     }
 }

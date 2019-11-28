@@ -6,16 +6,17 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
+    Animator anim;
 
     //initialized private variables that can be edited in the editor
-    [SerializeField] private float jumpForce;
+    [SerializeField] public float jumpForce;
     [Range(0,1)] [SerializeField] private float crouchSpeed = .36f;
     [Range(0, 0.3f)][SerializeField] private float movementSmoothing = 0.05f;
     [SerializeField] private bool airControl = false;
-    [SerializeField] private LayerMask whatIsGround;
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private Transform ceilingCheck;
-    [SerializeField] private Collider2D crouchDisableCollider;
+    [SerializeField] public LayerMask whatIsGround;
+    [SerializeField] public Transform groundCheck;
+    [SerializeField] public Transform ceilingCheck;
+    [SerializeField] public Collider2D crouchDisableCollider;
 
     public delegate void LandedDelegate();
     public event LandedDelegate landedEvent;
@@ -38,13 +39,16 @@ public class PlayerController : MonoBehaviour
     private Vector3 m_velocity = Vector3.zero;
 
     //variables for player attacks
-    [HideInInspector] public bool CR_Running;
+    [HideInInspector] public bool CR_Running = false;
+    [HideInInspector] public bool isAttacking = false;
     public Collider2D attackTriggerNeutral;
     public Collider2D attackTriggerDown;
     public Collider2D attackTriggerUp;
     private IEnumerator attacking;
-    private float attackCooldown = 0.7f;
-    private float attackTimer = 0.0f;
+    public float attackCooldown;
+    public float attackActiveTime;
+    private float attackTimer;
+    public int strength;
 
     //this adjusts the length for the raycast that recognizes if grounded or not
     private float raycastMaxDistance = 1.15f;
@@ -54,14 +58,19 @@ public class PlayerController : MonoBehaviour
     public float lowJumpMultiplier;
     private bool isFalling;
 
+    
     public int health;
     [HideInInspector] public bool isDead;
+
+
+
 
     private bool wasCrouching = false;
     private float currentMomentumX;
 
     private void Awake()
     {
+        anim = GetComponent<Animator>();
         availJumps = extraJumps;
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
         attackTriggerNeutral.enabled = false;
@@ -70,6 +79,7 @@ public class PlayerController : MonoBehaviour
         landedEvent += attackCancel;
         landedEvent += jumpReset;
         isDead = false;
+        
     }
 
     private void FixedUpdate()
@@ -84,10 +94,11 @@ public class PlayerController : MonoBehaviour
             isDead = true;
         }
     }
-
-    void Update()
+    private void Update()
     {
+        anim.SetBool("Attacking", isAttacking);
     }
+
 
     public void Move(float move, bool crouch, bool jump, bool isJumping)
     {
@@ -162,7 +173,7 @@ public class PlayerController : MonoBehaviour
                 --availJumps;
                 currentMomentumX = m_Rigidbody2D.velocity.x;
                 m_Rigidbody2D.velocity = new Vector3(currentMomentumX,0,0);
-                Jump((float)(jumpForce * 1.3));    //more force to the double jump to counterbalance the negative velocity
+                Jump((float)(jumpForce * 2));    //more force to the double jump to counterbalance the negative velocity
             }
             //This is when the jump button is being held down
             if(isJumping)
@@ -210,23 +221,7 @@ public class PlayerController : MonoBehaviour
         m_Rigidbody2D.AddForce(new Vector2(0f, jForce));
     }
 
-    public void Attack(string s)
-    {
-        if(s == "UP")
-        {
-            attackTriggerUp.enabled = true;
-        }
-        else if(s == "DOWN")
-        {
-            attackTriggerDown.enabled = true;
-        }
-        else
-        {
-            attackTriggerNeutral.enabled = true;
-        }
-        attacking = attackTime();
-        StartCoroutine(attacking);
-    }
+    
 
     //this is for creating the raycast given a direction, and returning that raycast
     private RaycastHit2D CheckRaycastGround(Vector2 direction)
@@ -253,36 +248,27 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void attackCancel()
-    {
-        if(CR_Running)
-        {
-            Debug.Log("FJDLSJFKDSF");
-            CR_Running = false;
-            attackTriggerNeutral.enabled = false;
-            attackTriggerUp.enabled = false;
-            attackTriggerDown.enabled = false;
-            StopCoroutine(attacking);
-        }
-    }
 
     private void jumpReset()
     {
         availJumps = extraJumps;
     }
 
+
     public IEnumerator attackTime()
     {
         CR_Running = true;
-        attackTimer = attackCooldown;
-        //this is the amount of time that the weapon hitbox is active
-        while(attackTimer > 0.3f)
+        isAttacking = true;
+        attackTimer = attackCooldown + attackActiveTime;
+        //this is the amount of time that the weapon hitbox is active (attackCooldown - this time)
+        while(attackTimer > attackCooldown)
         {
             attackTimer -= Time.deltaTime;
             yield return null;
         }
         //the weapon hitbox deactivates and there is a cooldown before
-        //the player is able to use it again
+        //the player is able to use it again. the remaining time(above is the actual Cooldown before the next strike)
+        isAttacking = false;
         attackTriggerNeutral.enabled = false;
         attackTriggerUp.enabled = false;
         attackTriggerDown.enabled = false;
@@ -304,7 +290,50 @@ public class PlayerController : MonoBehaviour
         }
         yield return 0;
     }
+
+    public void Attack(string s)
+    {
+        if(s == "UP")
+        {
+            attackTriggerUp.enabled = true;
+        }
+        else if(s == "DOWN")
+        {
+            attackTriggerDown.enabled = true;
+        }
+        else
+        {
+            attackTriggerNeutral.enabled = true;
+        }
+        attacking = attackTime();
+        StartCoroutine(attacking);
+    }
+
+    private void attackCancel()
+    {
+        if(CR_Running)
+        {
+            Debug.Log("FJDLSJFKDSF");
+            CR_Running = false;
+            attackTriggerNeutral.enabled = false;
+            attackTriggerUp.enabled = false;
+            attackTriggerDown.enabled = false;
+            StopCoroutine(attacking);
+        }
+    }
+
+    public void PlayerDamage(int damage)
+    {
+        StartCoroutine(Knockback(0.02f, 250 , transform.position));
+        health -= damage;
+    }
 }
+
+
+
+
+
+    
 
 
 //still need to add collisions, hit boxes, and a jump when you get the
