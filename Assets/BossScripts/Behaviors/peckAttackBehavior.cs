@@ -4,32 +4,29 @@ using UnityEngine;
 
 public class peckAttackBehavior : StateMachineBehaviour
 {
-    public float timer;
-    public float minTime;
-    public float maxTime;
-    // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
+    private Boss boss;
+    //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        timer = Random.Range(minTime, maxTime);
+        if(boss == null)
+        {
+            boss = GameObject.FindGameObjectWithTag("Boss").GetComponent<Boss>();
+        }
+            boss.attackTrigger = true;
+        //beak.enabled = true;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
-    override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-        if(timer <= 0)
-        {
-            animator.SetTrigger("idle");
-        }
-        else
-        {
-            timer -= Time.deltaTime;
-        }
-    }
+    //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    //{
+    //    
+    //}
 
-    // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
+    //OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        
+        boss.attackTrigger = false;
+        //beak.enabled = false;    
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

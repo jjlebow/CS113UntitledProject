@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-
-
-
     
-
     private Boss boss;
     public PlayerController player;
 

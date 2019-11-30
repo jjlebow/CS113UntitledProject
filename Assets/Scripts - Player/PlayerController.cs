@@ -89,21 +89,21 @@ public class PlayerController : MonoBehaviour
             AerialPhysics();
         }
         RaycastCheckUpdateGround();
+    }
+    private void Update()
+    {
         if(health <= 0)
         {
             isDead = true;
         }
-    }
-    private void Update()
-    {
         anim.SetBool("Attacking", isAttacking);
     }
 
 
     public void Move(float move, bool crouch, bool jump, bool isJumping)
     {
-        if(!CR_Running)
-        {
+        //if(!CR_Running)
+        //{
             if(!crouch)
             {
                 if(Physics2D.OverlapCircle(ceilingCheck.position, ceilingRadius, whatIsGround))
@@ -187,7 +187,7 @@ public class PlayerController : MonoBehaviour
                 else
                     isJumping = false;
             }
-        }
+        //}
     }
 
     //Adjusts player phsyics for use any time they are airborne
@@ -205,7 +205,7 @@ public class PlayerController : MonoBehaviour
 
     private void Flip()
     {
-        if(!CR_Running)
+        if(!isAttacking)
         {
             //switches the way the player is facing
             facingRight = !facingRight;
@@ -315,6 +315,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("FJDLSJFKDSF");
             CR_Running = false;
+            isAttacking = false;
             attackTriggerNeutral.enabled = false;
             attackTriggerUp.enabled = false;
             attackTriggerDown.enabled = false;

@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class Boss : MonoBehaviour {
 
+    [HideInInspector] public bool attackTrigger = false;
     public int health;
     public int damage;
     private float timeBtwDamage = 1.5f;
+    
 
 
     //public Animator camAnim;
@@ -15,6 +17,7 @@ public class Boss : MonoBehaviour {
     private Animator anim;
     [HideInInspector] public bool isDead;
     public PlayerController player;
+    public Collider2D beak;
 
     private void Start()
     {
@@ -24,6 +27,8 @@ public class Boss : MonoBehaviour {
 
     private void Update()
     {
+        if(health <= 0)
+            isDead = true;
 
         if (health <= 25) {
             anim.SetTrigger("stageTwo");
@@ -40,6 +45,14 @@ public class Boss : MonoBehaviour {
 
         //healthBar.value = health;
     }
+    private void FixedUpdate()
+    {
+        if(attackTrigger)
+            beak.enabled = true;
+        else
+            beak.enabled = false;
+    }
+
 
     //not sure if this should be on collision or on trigger
     private void OnTriggerEnter2D(Collider2D col)
