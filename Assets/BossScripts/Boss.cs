@@ -72,6 +72,13 @@ public class Boss : MonoBehaviour {
             Debug.Log("Boss has taken Damage: " + player.strength);
             BossDamage(player.strength);
         }
+        else if(col.gameObject.CompareTag("DownWeapon") && isDead == false)
+        {
+            Debug.Log("Boss has taken Damage: " + player.strength);
+            BossDamage(player.strength);
+            Debug.Log("Initiate pogo");
+            player.ConstantJump();
+        }
     }
 
     public void BossDamage(int damage)

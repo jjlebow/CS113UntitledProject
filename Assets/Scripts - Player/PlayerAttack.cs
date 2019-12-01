@@ -5,13 +5,13 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     
-    private Boss boss;
+    //private Boss boss;
     public PlayerController player;
 
 
     void Awake()
     {    
-        boss = GameObject.FindGameObjectWithTag("Boss").GetComponent<Boss>();
+        //boss = GameObject.FindGameObjectWithTag("Boss").GetComponent<Boss>();
     }
 
     // Update is called once per frame

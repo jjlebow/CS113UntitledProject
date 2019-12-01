@@ -41,9 +41,9 @@ public class PlayerController : MonoBehaviour
     //variables for player attacks
     [HideInInspector] public bool CR_Running = false;
     [HideInInspector] public bool isAttacking = false;
-    public Collider2D attackTriggerNeutral;
-    public Collider2D attackTriggerDown;
-    public Collider2D attackTriggerUp;
+    public GameObject attackTriggerNeutral;
+    public GameObject attackTriggerDown;
+    public GameObject attackTriggerUp;
     private IEnumerator attacking;
     public float attackCooldown;
     public float attackActiveTime;
@@ -66,16 +66,15 @@ public class PlayerController : MonoBehaviour
 
 
     private bool wasCrouching = false;
-    private float currentMomentumX;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
         availJumps = extraJumps;
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
-        attackTriggerNeutral.enabled = false;
-        attackTriggerUp.enabled = false;
-        attackTriggerDown.enabled = false;
+        attackTriggerNeutral.SetActive(false);
+        attackTriggerUp.SetActive(false);
+        attackTriggerDown.SetActive(false);
         landedEvent += attackCancel;
         landedEvent += jumpReset;
         isDead = false;
@@ -169,11 +168,10 @@ public class PlayerController : MonoBehaviour
             else if(!grounded && jump && availJumps > 0)
             {
                 isJumping = true;
-                jumpTimeCounter = jumpTime;
-                --availJumps;
-                currentMomentumX = m_Rigidbody2D.velocity.x;
-                m_Rigidbody2D.velocity = new Vector3(currentMomentumX,0,0);
+                jumpTimeCounter = jumpTime;        
+                m_Rigidbody2D.velocity = new Vector3(m_Rigidbody2D.velocity.x,0,0);
                 Jump((float)(jumpForce * 2));    //more force to the double jump to counterbalance the negative velocity
+                --availJumps;
             }
             //This is when the jump button is being held down
             if(isJumping)
@@ -269,9 +267,9 @@ public class PlayerController : MonoBehaviour
         //the weapon hitbox deactivates and there is a cooldown before
         //the player is able to use it again. the remaining time(above is the actual Cooldown before the next strike)
         isAttacking = false;
-        attackTriggerNeutral.enabled = false;
-        attackTriggerUp.enabled = false;
-        attackTriggerDown.enabled = false;
+        attackTriggerNeutral.SetActive(false);
+        attackTriggerUp.SetActive(false);
+        attackTriggerDown.SetActive(false);
         while(attackTimer > 0f)
         {
             attackTimer -= Time.deltaTime;
@@ -295,15 +293,19 @@ public class PlayerController : MonoBehaviour
     {
         if(s == "UP")
         {
-            attackTriggerUp.enabled = true;
+            attackTriggerUp.SetActive(true);
         }
         else if(s == "DOWN")
         {
-            attackTriggerDown.enabled = true;
+            attackTriggerDown.SetActive(true);
+            //if()
+            //{
+              //  MidairJump();
+            //}
         }
         else
         {
-            attackTriggerNeutral.enabled = true;
+            attackTriggerNeutral.SetActive(true);
         }
         attacking = attackTime();
         StartCoroutine(attacking);
@@ -316,16 +318,24 @@ public class PlayerController : MonoBehaviour
             Debug.Log("FJDLSJFKDSF");
             CR_Running = false;
             isAttacking = false;
-            attackTriggerNeutral.enabled = false;
-            attackTriggerUp.enabled = false;
-            attackTriggerDown.enabled = false;
+            attackTriggerNeutral.SetActive(false);
+            attackTriggerUp.SetActive(false);
+            attackTriggerDown.SetActive(false);
             StopCoroutine(attacking);
         }
     }
 
+    //this is for when the Jump function is only called once(the *11 is to make up for the fact that its only called once)
+    public void ConstantJump()
+    {
+        m_Rigidbody2D.velocity = new Vector3(m_Rigidbody2D.velocity.x,0,0);
+        m_Rigidbody2D.AddForce(new Vector2(0f, jumpForce * 11));    //more force to the double jump to counterbalance the negative velocity
+    }
+
+
     public void PlayerDamage(int damage)
     {
-        StartCoroutine(Knockback(0.02f, 250 , transform.position));
+        //StartCoroutine(Knockback(0.02f, 250 , transform.position));
         health -= damage;
     }
 }
