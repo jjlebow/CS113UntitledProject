@@ -6,6 +6,8 @@ public class BeakHitbox : MonoBehaviour
 {
     private PlayerController player;
     public int damage;
+    public Boss boss;
+    //private bool collisionFlag = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +22,12 @@ public class BeakHitbox : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
         // deal the player damage ! 
-        if (col.gameObject.CompareTag("Player")) {
+        if (col.gameObject.CompareTag("Player") && boss.collisionFlag == false && player.cantDamage == false) {
+            //collisionFlag = true;
+            StartCoroutine(boss.CollisionTimer());
             Debug.Log("Player has taken Damage from beak: " + damage);
             player.PlayerDamage(damage);
+            //collisionFlag = false;
             //if (timeBtwDamage <= 0) {
                 //camAnim.SetTrigger("shake");
                 //send player flying back

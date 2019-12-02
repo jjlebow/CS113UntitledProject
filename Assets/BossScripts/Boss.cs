@@ -8,7 +8,7 @@ public class Boss : MonoBehaviour {
     [HideInInspector] public bool attackTrigger = false;
     public int health;
     public int damage;
-    private float timeBtwDamage = 1.5f;
+    private float timeBtwCollision = 0.1f;  //this is to prevent multiple hitboxes hitting each other at once
     
 
 
@@ -18,8 +18,10 @@ public class Boss : MonoBehaviour {
     [HideInInspector] public bool isDead;
     public PlayerController player;
     public Collider2D beak;
+    public bool collisionFlag = false;
+    
 
-    private void Start()
+    private void Awake()
     {
         anim = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
@@ -38,10 +40,7 @@ public class Boss : MonoBehaviour {
             anim.SetTrigger("death");
         }
 
-        // give the player some time to recover before taking more damage !
-        if (timeBtwDamage > 0) {
-            timeBtwDamage -= Time.deltaTime;
-        }
+        
 
         //healthBar.value = health;
     }
@@ -57,32 +56,50 @@ public class Boss : MonoBehaviour {
     //not sure if this should be on collision or on trigger
     private void OnTriggerEnter2D(Collider2D col)
     {
-        // deal the player damage ! 
-        if (col.gameObject.CompareTag("Player") && isDead == false) {
-            Debug.Log("Player has taken Damage: " + damage);
-            player.PlayerDamage(damage);
-            //if (timeBtwDamage <= 0) {
-                //camAnim.SetTrigger("shake");
-                //send player flying back
-                
-            //}
-        } 
-        else if(col.gameObject.CompareTag("Weapon") && isDead == false)
+        if(!collisionFlag)
         {
-            Debug.Log("Boss has taken Damage: " + player.strength);
-            BossDamage(player.strength);
-        }
-        else if(col.gameObject.CompareTag("DownWeapon") && isDead == false)
-        {
-            Debug.Log("Boss has taken Damage: " + player.strength);
-            BossDamage(player.strength);
-            Debug.Log("Initiate pogo");
-            player.ConstantJump();
+            //collisionFlag = true;
+            StartCoroutine(CollisionTimer());
+            // deal the player damage ! 
+            if (col.gameObject.CompareTag("Player") && isDead == false && player.cantDamage == false) {
+                Debug.Log("Player has taken Damage: " + damage);
+                player.PlayerDamage(damage);
+                //if (timeBtwDamage <= 0) {
+                    //camAnim.SetTrigger("shake");
+                    //send player flying back
+                    
+                //}
+            } 
+            else if(col.gameObject.CompareTag("Weapon") && isDead == false)
+            {
+                Debug.Log("Boss has taken Damage: " + player.strength);
+                BossDamage(player.strength);
+            }
+            else if(col.gameObject.CompareTag("DownWeapon") && isDead == false)
+            {
+                Debug.Log("Boss has taken Damage: " + player.strength);
+                BossDamage(player.strength);
+                Debug.Log("Initiate pogo");
+                player.ConstantJump();
+            }
+            //collisionFlag = false;
         }
     }
 
     public void BossDamage(int damage)
     {
         health -= damage;
+    }
+
+    public IEnumerator CollisionTimer()
+    {
+        float copy = timeBtwCollision;
+        collisionFlag = true;
+        while(copy > 0)
+        {
+            copy -= Time.deltaTime;
+            yield return null;
+        }
+        collisionFlag = false;
     }
 }

@@ -58,6 +58,8 @@ public class PlayerController : MonoBehaviour
     public float lowJumpMultiplier;
     private bool isFalling;
 
+    private float timeBtwDamage = 1.5f; //this is the cooldown between which the player can take damage
+    public bool cantDamage = false;
     
     public int health;
     [HideInInspector] public bool isDead;
@@ -335,8 +337,21 @@ public class PlayerController : MonoBehaviour
 
     public void PlayerDamage(int damage)
     {
-        //StartCoroutine(Knockback(0.02f, 250 , transform.position));
+        StartCoroutine(Knockback(0.02f, 250 , transform.position));
+        StartCoroutine(DamageTimer());
         health -= damage;
+    }
+
+    public IEnumerator DamageTimer()
+    {
+        float copy = timeBtwDamage;
+        cantDamage = true;
+        while(copy > 0)
+        {
+            copy -= Time.deltaTime;
+            yield return null;
+        }
+        cantDamage = false;
     }
 }
 
