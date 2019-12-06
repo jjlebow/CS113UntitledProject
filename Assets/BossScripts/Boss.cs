@@ -32,17 +32,17 @@ public class Boss : MonoBehaviour {
         if(health <= 0)
             isDead = true;
 
-        if (health <= 25) {
-            anim.SetTrigger("stageTwo");
-        }
+        //if (health <= 25) {
+          //  anim.SetTrigger("stageTwo");
+        //}
 
-        if (health <= 0) {
-            anim.SetTrigger("death");
-        }
+        //if (health <= 0) {
+        //    anim.SetTrigger("death");
+        //}
 
         
 
-        //healthBar.value = health;
+        healthBar.value = health;
     }
     private void FixedUpdate()
     {
@@ -62,7 +62,7 @@ public class Boss : MonoBehaviour {
             StartCoroutine(CollisionTimer());
             // deal the player damage ! 
             if (col.gameObject.CompareTag("Player") && isDead == false && player.cantDamage == false) {
-                Debug.Log("Player has taken Damage: " + damage);
+                //Debug.Log("Player has taken Damage: " + damage);
                 player.PlayerDamage(damage);
                 //if (timeBtwDamage <= 0) {
                     //camAnim.SetTrigger("shake");
@@ -72,14 +72,14 @@ public class Boss : MonoBehaviour {
             } 
             else if(col.gameObject.CompareTag("Weapon") && isDead == false)
             {
-                Debug.Log("Boss has taken Damage: " + player.strength);
+                //Debug.Log("Boss has taken Damage: " + player.strength);
                 BossDamage(player.strength);
             }
             else if(col.gameObject.CompareTag("DownWeapon") && isDead == false)
             {
-                Debug.Log("Boss has taken Damage: " + player.strength);
+                //Debug.Log("Boss has taken Damage: " + player.strength);
                 BossDamage(player.strength);
-                Debug.Log("Initiate pogo");
+                //Debug.Log("Initiate pogo");
                 player.ConstantJump();
             }
             //collisionFlag = false;

@@ -2,6 +2,7 @@
 using UnityEngine.Events;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System; 
 
 public class PlayerController : MonoBehaviour
@@ -62,6 +63,7 @@ public class PlayerController : MonoBehaviour
     public bool cantDamage = false;
     
     public int health;
+    public Slider healthBar;
     [HideInInspector] public bool isDead;
 
 
@@ -97,6 +99,7 @@ public class PlayerController : MonoBehaviour
         {
             isDead = true;
         }
+        healthBar.value = health;
         anim.SetBool("Attacking", isAttacking);
     }
 
@@ -317,7 +320,7 @@ public class PlayerController : MonoBehaviour
     {
         if(CR_Running)
         {
-            Debug.Log("FJDLSJFKDSF");
+            //Debug.Log("FJDLSJFKDSF");
             CR_Running = false;
             isAttacking = false;
             attackTriggerNeutral.SetActive(false);
@@ -337,7 +340,7 @@ public class PlayerController : MonoBehaviour
 
     public void PlayerDamage(int damage)
     {
-        StartCoroutine(Knockback(0.02f, 250 , transform.position));
+        //StartCoroutine(Knockback(0.02f, 250 , transform.position));
         StartCoroutine(DamageTimer());
         health -= damage;
     }

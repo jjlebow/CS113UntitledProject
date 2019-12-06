@@ -25,7 +25,7 @@ public class BeakHitbox : MonoBehaviour
         if (col.gameObject.CompareTag("Player") && boss.collisionFlag == false && player.cantDamage == false) {
             //collisionFlag = true;
             StartCoroutine(boss.CollisionTimer());
-            Debug.Log("Player has taken Damage from beak: " + damage);
+            //Debug.Log("Player has taken Damage from beak: " + damage);
             player.PlayerDamage(damage);
             //collisionFlag = false;
             //if (timeBtwDamage <= 0) {
