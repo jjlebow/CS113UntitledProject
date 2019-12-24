@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 
     //initialized private variables that can be edited in the editor
     [SerializeField] public float jumpForce;
-    [Range(0,1)] [SerializeField] private float crouchSpeed = .36f;
+    //[Range(0,1)] [SerializeField] private float crouchSpeed = .36f;
     [Range(0, 0.3f)][SerializeField] private float movementSmoothing = 0.05f;
     [SerializeField] private bool airControl = false;
     [SerializeField] public LayerMask whatIsGround;
@@ -28,8 +28,6 @@ public class PlayerController : MonoBehaviour
     private float jumpTimeCounter;
     private int availJumps;
 
-    //tells us whether or not the player is grounded
-    [HideInInspector] public bool grounded;
     //Radius of the circle that determines if we are grounded or not
     const float groundedRadius = 0.2f;
     //radius of the circle that determinds if the player is touching a ceiling or not
@@ -39,17 +37,7 @@ public class PlayerController : MonoBehaviour
     private bool facingRight = true;
     private Vector3 m_velocity = Vector3.zero;
 
-    //variables for player attacks
-    [HideInInspector] public bool CR_Running = false;
-    [HideInInspector] public bool isAttacking = false;
-    public GameObject attackTriggerNeutral;
-    public GameObject attackTriggerDown;
-    public GameObject attackTriggerUp;
-    private IEnumerator attacking;
-    public float attackCooldown;
-    public float attackActiveTime;
-    private float attackTimer;
-    public int strength;
+    
 
     //this adjusts the length for the raycast that recognizes if grounded or not
     private float raycastMaxDistance = 1.15f;
@@ -59,66 +47,124 @@ public class PlayerController : MonoBehaviour
     public float lowJumpMultiplier;
     private bool isFalling;
 
-    private float timeBtwDamage = 1.5f; //this is the cooldown between which the player can take damage
-    public bool cantDamage = false;
+    private float knockbackDuration = 0.4f; //how long player is knocked back for
+    private float timeBtwDamage = 1f; //this is the cooldown between which the player can take damage
+    
     
     public int health;
     public Slider healthBar;
-    [HideInInspector] public bool isDead;
+
+    private PlayerAttack playerAttacker;
+
+    public Boss boss;
+
+    private Vector3 knockbackDirRight;
+    private Vector3 knockbackDirLeft;
+    private Vector3 knockbackDir;
+
+    
 
 
-
-
-    private bool wasCrouching = false;
+    //private bool wasCrouching = false;
 
     private void Awake()
     {
+        playerAttacker = GetComponent<PlayerAttack>();
         anim = GetComponent<Animator>();
         availJumps = extraJumps;
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
-        attackTriggerNeutral.SetActive(false);
-        attackTriggerUp.SetActive(false);
-        attackTriggerDown.SetActive(false);
-        landedEvent += attackCancel;
+        
+        landedEvent += playerAttacker.attackCancel;
         landedEvent += jumpReset;
-        isDead = false;
+        landedEvent += landingAnimation;
+        
         
     }
 
     private void FixedUpdate()
     {
-        if(!grounded)
+        if(!StateManager.instance.playerGrounded)
         {
             AerialPhysics();
         }
         RaycastCheckUpdateGround();
+        if(StateManager.instance.playerState == StateManager.PlayerStates.KNOCKBACK)
+            transform.position = Vector3.Lerp(transform.position, knockbackDir, Time.deltaTime * 0.5f);
+        /*
+        //Lerp(current position, position we are trying to get to, speed of movement(higher number is faster))
+        if(StateManager.instance.playerState == StateManager.PlayerStates.KNOCKBACK && StateManager.instance.faceRight)
+        {
+            //m_Rigidbody2D.velocity = new Vector3(knockbackDirRight.x *2, knockbackDirRight.y * 2, knockbackDirRight.z);
+            transform.position = Vector3.Lerp(transform.position, knockbackDirRight, Time.deltaTime * 0.7f);
+        }
+        else if(StateManager.instance.playerState == StateManager.PlayerStates.KNOCKBACK && !StateManager.instance.faceRight)
+        {
+            //m_Rigidbody2D.velocity = new Vector3(knockbackDirLeft.x * 2, knockbackDirLeft.y * 2, knockbackDirLeft.z);
+            transform.position = Vector3.Lerp(transform.position, knockbackDirLeft, Time.deltaTime * 0.8f);
+        }
+        */
     }
     private void Update()
     {
         if(health <= 0)
         {
-            isDead = true;
+            StateManager.instance.playerState = StateManager.PlayerStates.DEAD;
         }
         healthBar.value = health;
-        anim.SetBool("Attacking", isAttacking);
+
+
+        //animation triggers
+        if(m_Rigidbody2D.velocity.y <= 0 && !StateManager.instance.playerGrounded)
+        {
+            //anim.SetBool("airRising", false);
+            anim.SetTrigger("airFalling");
+        }
+        else if(m_Rigidbody2D.velocity.y > 0 && !StateManager.instance.playerGrounded)
+        {
+            anim.SetTrigger("airRising");
+            //anim.SetBool("airFalling", false);
+        }
+        anim.SetBool("Attacking", StateManager.instance.isAttacking);
+        anim.SetBool("attackCooldown", StateManager.instance.inCooldown);
+        if(StateManager.instance.playerState == StateManager.PlayerStates.MOVING)
+            anim.SetBool("Walking", true);
+        else
+            anim.SetBool("Walking", false);
+        if(StateManager.instance.attackDir == StateManager.AttackDirection.NEUTRAL)
+            anim.SetInteger("attackDirection", 1);
+        else if(StateManager.instance.attackDir == StateManager.AttackDirection.UP)
+            anim.SetInteger("attackDirection", 2);
+        else if(StateManager.instance.attackDir == StateManager.AttackDirection.DOWN)
+            anim.SetInteger("attackDirection", 3);
+        else if(StateManager.instance.attackDir == StateManager.AttackDirection.NOATTACK)
+            anim.SetInteger("attackDirection", 0);
+    }
+
+    private void landingAnimation()
+    {
+        //anim.SetBool("airRising", false);
+        //anim.SetBool("airFalling", false);
+        anim.SetTrigger("Landing");
     }
 
 
-    public void Move(float move, bool crouch, bool jump, bool isJumping)
+    public void Move(float move)
     {
-        //if(!CR_Running)
+        //if(!inCooldown)
         //{
+            /*
             if(!crouch)
             {
                 if(Physics2D.OverlapCircle(ceilingCheck.position, ceilingRadius, whatIsGround))
                 {
                     crouch = true;
                 }
-            }
+            }*/
 
             //can only control the player if grounded or airControl is on
-            if(grounded || airControl)
+            if(StateManager.instance.playerGrounded || airControl)
             {
+                /*
                 if(crouch)
                 {
                     if(!wasCrouching)
@@ -143,7 +189,7 @@ public class PlayerController : MonoBehaviour
                         wasCrouching = false;
                         //OnCrouchEvent.Invoke(false);
                     }
-                }
+                }*/
 
                 //finding target velocity to move the player
                 Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
@@ -154,32 +200,34 @@ public class PlayerController : MonoBehaviour
                 if(move > 0 && !facingRight)
                 {
                     Flip();
+                    StateManager.instance.faceRight = true;
                 }
                 else if(move < 0 && facingRight)
                 {
                     Flip();
+                    StateManager.instance.faceRight = false;
                 }
             }
             //This is called when the player jumps and they are grounded
-            if(grounded && jump)
+            if(StateManager.instance.playerGrounded && StateManager.instance.jump)
             {
-                isJumping = true;
+                StateManager.instance.isJumping = true;
                 jumpTimeCounter = jumpTime;
                 Jump(jumpForce);
             }
             //this is called when the player is not grounded but still has 
             //available jumps(double jump)
             
-            else if(!grounded && jump && availJumps > 0)
+            else if(!StateManager.instance.playerGrounded && StateManager.instance.jump && availJumps > 0)
             {
-                isJumping = true;
+                StateManager.instance.isJumping = true;
                 jumpTimeCounter = jumpTime;        
                 m_Rigidbody2D.velocity = new Vector3(m_Rigidbody2D.velocity.x,0,0);
                 Jump((float)(jumpForce * 2));    //more force to the double jump to counterbalance the negative velocity
                 --availJumps;
             }
             //This is when the jump button is being held down
-            if(isJumping)
+            if(StateManager.instance.isJumping)
             {
                 //This confirms that the timer for the jump does not exceed
                 if(jumpTimeCounter > 0)
@@ -188,7 +236,7 @@ public class PlayerController : MonoBehaviour
                     jumpTimeCounter -= Time.deltaTime;
                 }
                 else
-                    isJumping = false;
+                    StateManager.instance.isJumping = false;
             }
         //}
     }
@@ -208,7 +256,7 @@ public class PlayerController : MonoBehaviour
 
     private void Flip()
     {
-        if(!isAttacking)
+        if(!StateManager.instance.isAttacking)
         {
             //switches the way the player is facing
             facingRight = !facingRight;
@@ -224,8 +272,6 @@ public class PlayerController : MonoBehaviour
         m_Rigidbody2D.AddForce(new Vector2(0f, jForce));
     }
 
-    
-
     //this is for creating the raycast given a direction, and returning that raycast
     private RaycastHit2D CheckRaycastGround(Vector2 direction)
     {
@@ -239,96 +285,48 @@ public class PlayerController : MonoBehaviour
     {
         RaycastHit2D hit = CheckRaycastGround(direction);
         //Debug.DrawRay(transform.position, direction, Color.red);
-        if(hit.collider && grounded == false)
+        if(hit.collider && StateManager.instance.playerGrounded == false)
         {
-            grounded = true;
+            StateManager.instance.playerGrounded = true;
             if(landedEvent != null)
                 landedEvent();
         }
         else if(!hit.collider)
         {
-            grounded = false;
+            StateManager.instance.playerGrounded = false;
         }
     }
-
 
     private void jumpReset()
     {
         availJumps = extraJumps;
     }
-
-
-    public IEnumerator attackTime()
-    {
-        CR_Running = true;
-        isAttacking = true;
-        attackTimer = attackCooldown + attackActiveTime;
-        //this is the amount of time that the weapon hitbox is active (attackCooldown - this time)
-        while(attackTimer > attackCooldown)
-        {
-            attackTimer -= Time.deltaTime;
-            yield return null;
-        }
-        //the weapon hitbox deactivates and there is a cooldown before
-        //the player is able to use it again. the remaining time(above is the actual Cooldown before the next strike)
-        isAttacking = false;
-        attackTriggerNeutral.SetActive(false);
-        attackTriggerUp.SetActive(false);
-        attackTriggerDown.SetActive(false);
-        while(attackTimer > 0f)
-        {
-            attackTimer -= Time.deltaTime;
-            yield return null;
-        }
-        CR_Running = false;
-    }
-
+    
+    /*
     public IEnumerator Knockback(float knockDur, float knockbackPwr, Vector3 knockbackDir)
     {
         float timer = 0;
         while(knockDur > timer)
         {
+            //knockbackPwr = knockbackPwr *2;
             timer += Time.deltaTime;
+            //m_Rigidbody2D.velocity = new Vector3(knockbackDir.x * knockbackPwr, knockbackDir.y * knockbackPwr, knockbackDir.z * knockbackPwr);
             m_Rigidbody2D.AddForce(new Vector3(knockbackDir.x * knockbackPwr, knockbackDir.y * knockbackPwr, transform.position.z));
         }
         yield return 0;
     }
-
-    public void Attack(string s)
+    */
+    /*
+    public void Knockback()
     {
-        if(s == "UP")
-        {
-            attackTriggerUp.SetActive(true);
-        }
-        else if(s == "DOWN")
-        {
-            attackTriggerDown.SetActive(true);
-            //if()
-            //{
-              //  MidairJump();
-            //}
-        }
+        Vector3 knockbackDir;
+        if(StateManager.instance.faceRight == true)
+            knockbackDir = new Vector3(transform.position.x - 100, transform.position.y + 100, transform.position.z);
         else
-        {
-            attackTriggerNeutral.SetActive(true);
-        }
-        attacking = attackTime();
-        StartCoroutine(attacking);
+            knockbackDir = new Vector3(transform.position.x + 100, transform.position.y + 100, transform.position.z);
+        transform.position = Vector3.Lerp(transform.position, knockbackDir, Time.deltaTime * 2);
     }
-
-    private void attackCancel()
-    {
-        if(CR_Running)
-        {
-            //Debug.Log("FJDLSJFKDSF");
-            CR_Running = false;
-            isAttacking = false;
-            attackTriggerNeutral.SetActive(false);
-            attackTriggerUp.SetActive(false);
-            attackTriggerDown.SetActive(false);
-            StopCoroutine(attacking);
-        }
-    }
+    */
 
     //this is for when the Jump function is only called once(the *11 is to make up for the fact that its only called once)
     public void ConstantJump()
@@ -337,36 +335,58 @@ public class PlayerController : MonoBehaviour
         m_Rigidbody2D.AddForce(new Vector2(0f, jumpForce * 11));    //more force to the double jump to counterbalance the negative velocity
     }
 
-
-    public void PlayerDamage(int damage)
+    //this includes the knockback but want to edit it to make the knockback move slower
+    public void PlayerDamage(int damage, Vector3 attacker)
     {
-        //StartCoroutine(Knockback(0.02f, 250 , transform.position));
+        //Vector3 knockbackDir = (m_Rigidbody2D.transform.position - boss.transform.position).normalized;
+        //m_Rigidbody2D.velocity = new Vector3(knockbackDir.x * 65, knockbackDir.y * 65, knockbackDir.z * 65);
+        //m_Rigidbody2D.AddForce(new Vector3(knockbackDir.x * 5000, knockbackDir.y * 5000, knockbackDir.z * 5000));
+        //StartCoroutine(Knockback(5f, 10, knockbackDir));
+        //StartCoroutine(Knockback(0.5f));
+        //ensures that current velocity does not impact knockback
+        m_Rigidbody2D.velocity = new Vector3(0,0,0);
+        //determines which direction you will be going in 
+        Vector3 oppositeDir = (attacker - m_Rigidbody2D.transform.position).normalized;
+        //sets up the angle at which the player will be knocked back, using the direction determined from the above collision data
+        if(oppositeDir.x >= 0)
+            knockbackDir = new Vector3(transform.position.x - 13, transform.position.y + 15, transform.position.z);
+        else
+            knockbackDir = new Vector3(transform.position.x + 13, transform.position.y + 15, transform.position.z);
+        //the x and y position modifiers are mostly for finding which angle to send the player at during knockback but also affects magnitude
+        //knockbackDirRight = new Vector3(transform.position.x - 12, transform.position.y + 10, transform.position.z);
+        //knockbackDirLeft = new Vector3(transform.position.x + 12, transform.position.y + 10, transform.position.z);
+        StateManager.instance.playerState = StateManager.PlayerStates.KNOCKBACK;
+        StartCoroutine(KnockbackTimer());
         StartCoroutine(DamageTimer());
         health -= damage;
     }
 
-    public IEnumerator DamageTimer()
+    //determines how long the player will be in the knockback phase
+    private IEnumerator KnockbackTimer()
     {
-        float copy = timeBtwDamage;
-        cantDamage = true;
+        float copy = knockbackDuration;
+        //StateManager.instance.cantDamage = true;
         while(copy > 0)
         {
             copy -= Time.deltaTime;
             yield return null;
         }
-        cantDamage = false;
+        //StateManager.instance.cantDamage = false;
+        StateManager.instance.playerState = StateManager.PlayerStates.IDLE;
+    }
+    //determines how long the player has invulnerability between attacks
+    private IEnumerator DamageTimer()
+    {
+        float copy = timeBtwDamage;
+        StateManager.instance.cantDamage = true;
+        while(copy > 0)
+        {
+            copy -= Time.deltaTime;
+            yield return null;
+        }
+        StateManager.instance.cantDamage = false;
     }
 }
 
-
-
-
-
-    
-
-
-//still need to add collisions, hit boxes, and a jump when you get the
-//down hit box. should reset the velocity to 0 as well and do a jump
-//that isnt dependant on the duration of holding the space key
 
 

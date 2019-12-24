@@ -18,11 +18,11 @@ public class Manager : MonoBehaviour
     private void Update()
     {
         //runs the game over function when the player has died, regardless of whether or not the boss has died
-        if(player.isDead)
+        if(StateManager.instance.playerState == StateManager.PlayerStates.DEAD)
         {
             GameOver();
         }
-        else if(boss.isDead & !player.isDead)
+        else if(boss.isDead & StateManager.instance.playerState != StateManager.PlayerStates.DEAD)
         {
             Victory();
         }

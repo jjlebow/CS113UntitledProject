@@ -8,9 +8,6 @@ public class PlayerMovement : MonoBehaviour
 	private PlayerController controller;
 	float horizontal = 0f;
     public float runningSpeed = 20f;
-    public bool isJumping = false;
-    bool jump = false;
-    bool crouch = false;
 
 
     // Start is called before the first frame update
@@ -22,33 +19,44 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal") * runningSpeed;
-        if(Input.GetButtonDown("Jump"))
+        if(StateManager.instance.playerState != StateManager.PlayerStates.KNOCKBACK)
         {
-            isJumping = true;
-            jump = true;
+            if(horizontal != 0 && StateManager.instance.playerGrounded)
+                StateManager.instance.playerState = StateManager.PlayerStates.MOVING;
+            else if(horizontal == 0 && StateManager.instance.playerGrounded)
+                StateManager.instance.playerState = StateManager.PlayerStates.IDLE;
         }
-        else if(Input.GetButtonUp("Jump"))
-        {
-            isJumping = false;
-            //Debug.Log("here");
-            //jump = false;
-        }
-
-        if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
-        {
-        	crouch = true;
-        } 
-        else if(Input.GetKeyUp(KeyCode.S) && Input.GetKeyUp(KeyCode.DownArrow))
-        {
-        	crouch = false;
-        }
-
     }
 
     void FixedUpdate()
     {
-    		controller.Move(horizontal * Time.fixedDeltaTime, crouch, jump, isJumping);
-    		jump = false;
+        if(StateManager.instance.playerState != StateManager.PlayerStates.KNOCKBACK)
+        {
+            horizontal = Input.GetAxisRaw("Horizontal") * runningSpeed;
+            if(Input.GetButtonDown("Jump"))
+            {
+                StateManager.instance.isJumping = true;
+                StateManager.instance.jump = true;
+            }
+            else if(Input.GetButtonUp("Jump"))
+            {
+                StateManager.instance.isJumping = false;
+                //Debug.Log("here");
+                //jump = false;
+            }
+
+            if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                StateManager.instance.crouch = true;
+            } 
+            else if(Input.GetKeyUp(KeyCode.S) && Input.GetKeyUp(KeyCode.DownArrow))
+            {
+                StateManager.instance.crouch = false;
+            }
+
+
+            controller.Move(horizontal * Time.fixedDeltaTime);
+            StateManager.instance.jump = false;
+        }
     }
 }

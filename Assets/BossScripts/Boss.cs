@@ -16,7 +16,7 @@ public class Boss : MonoBehaviour {
     public Slider healthBar;
     private Animator anim;
     [HideInInspector] public bool isDead;
-    public PlayerController player;
+    private PlayerController player;
     public Collider2D beak;
     public bool collisionFlag = false;
     
@@ -61,9 +61,9 @@ public class Boss : MonoBehaviour {
             //collisionFlag = true;
             StartCoroutine(CollisionTimer());
             // deal the player damage ! 
-            if (col.gameObject.CompareTag("Player") && isDead == false && player.cantDamage == false) {
+            if (col.gameObject.CompareTag("Player") && isDead == false && StateManager.instance.cantDamage == false) {
                 //Debug.Log("Player has taken Damage: " + damage);
-                player.PlayerDamage(damage);
+                player.PlayerDamage(damage, transform.position);
                 //if (timeBtwDamage <= 0) {
                     //camAnim.SetTrigger("shake");
                     //send player flying back
@@ -73,12 +73,12 @@ public class Boss : MonoBehaviour {
             else if(col.gameObject.CompareTag("Weapon") && isDead == false)
             {
                 //Debug.Log("Boss has taken Damage: " + player.strength);
-                BossDamage(player.strength);
+                BossDamage(PlayerAttack.strength);
             }
             else if(col.gameObject.CompareTag("DownWeapon") && isDead == false)
             {
                 //Debug.Log("Boss has taken Damage: " + player.strength);
-                BossDamage(player.strength);
+                BossDamage(PlayerAttack.strength);
                 //Debug.Log("Initiate pogo");
                 player.ConstantJump();
             }
