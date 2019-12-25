@@ -22,9 +22,9 @@ public class BeakHitbox : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
         // deal the player damage ! 
-        if (col.gameObject.CompareTag("Player") && boss.collisionFlag == false && StateManager.instance.cantDamage == false) {
+        if (col.gameObject.CompareTag("Player") && StateManager.instance.cantDamage == false) {
             //collisionFlag = true;
-            StartCoroutine(boss.CollisionTimer());
+            //StartCoroutine(boss.CollisionTimer());
             //Debug.Log("Player has taken Damage from beak: " + damage);
             player.PlayerDamage(damage, transform.position);
             //collisionFlag = false;

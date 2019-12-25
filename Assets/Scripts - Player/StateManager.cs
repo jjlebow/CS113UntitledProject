@@ -23,22 +23,20 @@ public class StateManager : MonoBehaviour
         IDLE,
         MOVING,
         DEAD,
-        KNOCKBACK
+        HOLD
         //AIRFALLING,
         //AIRRISING
         //BACKWARDS MOVE (Strafe mid combo option)
     }
 
-    public enum AttackDirection
+    public enum Directional
     {
-        NOATTACK,
         NEUTRAL,
         DOWN,
-        UP,
-        AERIAL
+        UP
     }
     public PlayerStates playerState;
-    public AttackDirection attackDir;
+    public Directional directionalFacing;
 
     private void Awake()
     {

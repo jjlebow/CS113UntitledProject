@@ -26,30 +26,7 @@ public class PlayerAttack : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        //this chain of if statements is used to determine which direction the attack is used in. GetKey is used instead so that we can read 
-        //multiple inputs at once
-        if((Input.GetAxisRaw("Vertical") < 0) && Input.GetKey(KeyCode.K) && (StateManager.instance.playerGrounded == false) && !StateManager.instance.inCooldown)
-        {
-            StateManager.instance.attackDir = StateManager.AttackDirection.DOWN;
-            Attack();
-        }
-        else if((Input.GetAxisRaw("Vertical") > 0) && Input.GetKey(KeyCode.K) &&!StateManager.instance.inCooldown)
-        {
-            StateManager.instance.attackDir = StateManager.AttackDirection.UP;
-            Attack();
-        }
-        else if(Input.GetKeyDown(KeyCode.K) && !StateManager.instance.inCooldown)
-        {
-            StateManager.instance.attackDir = StateManager.AttackDirection.NEUTRAL;
-            Attack();
-        }
-        else if(!StateManager.instance.inCooldown)
-        {
-            StateManager.instance.attackDir = StateManager.AttackDirection.NOATTACK;
-        }
-    }
+
 
     public IEnumerator attackTime()
     {
@@ -78,21 +55,24 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack()
     {
-        if(StateManager.instance.attackDir == StateManager.AttackDirection.UP)
+        if(StateManager.instance.directionalFacing == StateManager.Directional.UP)
         {
             attackTriggerUp.SetActive(true);
+            player.anim.SetInteger("attackDirection", 2);
         }
-        else if(StateManager.instance.attackDir == StateManager.AttackDirection.DOWN)
+        else if(StateManager.instance.directionalFacing == StateManager.Directional.DOWN && !StateManager.instance.playerGrounded)
         {
             attackTriggerDown.SetActive(true);
+            player.anim.SetInteger("attackDirection", 3);
             //if()
             //{
               //  MidairJump();
             //}
         }
-        else
+        else if(StateManager.instance.directionalFacing == StateManager.Directional.NEUTRAL)
         {
             attackTriggerNeutral.SetActive(true);
+            player.anim.SetInteger("attackDirection", 1);
         }
         attacking = attackTime();
         StartCoroutine(attacking);

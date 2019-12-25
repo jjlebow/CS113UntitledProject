@@ -8,7 +8,7 @@ public class Boss : MonoBehaviour {
     [HideInInspector] public bool attackTrigger = false;
     public int health;
     public int damage;
-    private float timeBtwCollision = 0.1f;  //this is to prevent multiple hitboxes hitting each other at once
+    private float timeBtwCollision = 0.1f;  //this is to prevent multiple hitboxes hitting each other at once. basically boss invuln frames between damage
     
 
 
@@ -17,14 +17,16 @@ public class Boss : MonoBehaviour {
     private Animator anim;
     [HideInInspector] public bool isDead;
     private PlayerController player;
+    private PlayerMovement playerMove;
     public Collider2D beak;
-    public bool collisionFlag = false;
+    public bool bossCantDamage = false;   //this is the flag that prevents the boss from taking damage. boss will not lose health while this is true
     
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        playerMove = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
     }
 
     private void Update()
@@ -56,8 +58,6 @@ public class Boss : MonoBehaviour {
     //not sure if this should be on collision or on trigger
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(!collisionFlag)
-        {
             //collisionFlag = true;
             StartCoroutine(CollisionTimer());
             // deal the player damage ! 
@@ -80,26 +80,26 @@ public class Boss : MonoBehaviour {
                 //Debug.Log("Boss has taken Damage: " + player.strength);
                 BossDamage(PlayerAttack.strength);
                 //Debug.Log("Initiate pogo");
-                player.ConstantJump();
+                playerMove.ConstantJump();
             }
             //collisionFlag = false;
-        }
     }
 
     public void BossDamage(int damage)
     {
-        health -= damage;
+        if(!bossCantDamage)
+            health -= damage;
     }
 
     public IEnumerator CollisionTimer()
     {
         float copy = timeBtwCollision;
-        collisionFlag = true;
+        bossCantDamage = true;
         while(copy > 0)
         {
             copy -= Time.deltaTime;
             yield return null;
         }
-        collisionFlag = false;
+        bossCantDamage = false;
     }
 }

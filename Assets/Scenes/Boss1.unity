@@ -162,7 +162,7 @@ MonoBehaviour:
   faceRight: 1
   knockback: 0
   playerState: 0
-  attackDir: 0
+  directionalFacing: 0
 --- !u!4 &221229782
 Transform:
   m_ObjectHideFlags: 0
@@ -2912,7 +2912,7 @@ MonoBehaviour:
   healthBar: {fileID: 1068254284}
   isDead: 0
   beak: {fileID: 821913820}
-  collisionFlag: 0
+  bossCantDamage: 0
 --- !u!1 &1779994409
 GameObject:
   m_ObjectHideFlags: 0
@@ -3433,7 +3433,42 @@ PrefabInstance:
     - target: {fileID: 7087736515704205655, guid: 2839d03bac37062408494bf9a453acc9,
         type: 3}
       propertyPath: runningSpeed
-      value: 25
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087736515704205655, guid: 2839d03bac37062408494bf9a453acc9,
+        type: 3}
+      propertyPath: extraJumps
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087736515704205655, guid: 2839d03bac37062408494bf9a453acc9,
+        type: 3}
+      propertyPath: jumpTime
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087736515704205655, guid: 2839d03bac37062408494bf9a453acc9,
+        type: 3}
+      propertyPath: jumpForce
+      value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087736515704205655, guid: 2839d03bac37062408494bf9a453acc9,
+        type: 3}
+      propertyPath: fallMultiplier
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087736515704205655, guid: 2839d03bac37062408494bf9a453acc9,
+        type: 3}
+      propertyPath: lowJumpMultiplier
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087736515704205655, guid: 2839d03bac37062408494bf9a453acc9,
+        type: 3}
+      propertyPath: dashDuration
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087736515704205655, guid: 2839d03bac37062408494bf9a453acc9,
+        type: 3}
+      propertyPath: dashCooldown
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 7087736515704205641, guid: 2839d03bac37062408494bf9a453acc9,
         type: 3}
