@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 direction = new Vector2(0,-1);
     //this adjusts the length for the raycast that recognizes if grounded or not
-    private float raycastMaxDistance = 1.15f;
+    private float raycastMaxDistance = 1f;
     public float fallMultiplier;
     public float lowJumpMultiplier;
 
@@ -51,7 +51,9 @@ public class PlayerMovement : MonoBehaviour
         RaycastCheckUpdateGround();
         if(StateManager.instance.knockback)
             transform.position = Vector3.Lerp(transform.position, controller.knockbackDir, Time.deltaTime * 0.5f);
-        else if(StateManager.instance.playerState != StateManager.PlayerStates.HOLD)//StateManager.instance.knockback == false)//
+        else if(StateManager.instance.inCooldown && StateManager.instance.playerGrounded)
+            controller.m_Rigidbody2D.velocity = new Vector3(0,0,0);
+        else if(StateManager.instance.playerState != StateManager.PlayerStates.HOLD && !StateManager.instance.inCooldown)//StateManager.instance.knockback == false)//
         {
             horizontal = Input.GetAxisRaw("Horizontal") * runningSpeed;
             if(Input.GetButtonDown("Jump") && !cantJump)
@@ -235,7 +237,9 @@ public class PlayerMovement : MonoBehaviour
     private RaycastHit2D CheckRaycastGround(Vector2 direction)
     {
         Vector2 startingPosition = new Vector2(transform.position.x, transform.position.y);// + directionOriginOffset);
+        //Debug.DrawRay(startingPosition,direction, Color.red, raycastMaxDistance); //this is not accurate
         //the final argument is a layer mask telling the raycast to only pay attention to layer 10 (ground)
+        
         return Physics2D.Raycast(startingPosition, direction, raycastMaxDistance, 1 << 10);
     }
 
