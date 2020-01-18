@@ -59,7 +59,7 @@ public class Boss : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D col)
     {
             //collisionFlag = true;
-            StartCoroutine(CollisionTimer());
+            
             // deal the player damage ! 
             if (col.gameObject.CompareTag("Player") && isDead == false && StateManager.instance.cantDamage == false) {
                 //Debug.Log("Player has taken Damage: " + damage);
@@ -70,18 +70,19 @@ public class Boss : MonoBehaviour {
                     
                 //}
             } 
-            else if(col.gameObject.CompareTag("Weapon") && isDead == false)
+            else if(col.gameObject.CompareTag("Weapon") && isDead == false && bossCantDamage == false)
             {
-                //Debug.Log("Boss has taken Damage: " + player.strength);
-                BossDamage(PlayerAttack.strength);
+                Debug.Log("Boss has taken Damage: " + PlayerAttack.strength);
+                health -= PlayerAttack.strength;
             }
-            else if(col.gameObject.CompareTag("DownWeapon") && isDead == false)
+            else if(col.gameObject.CompareTag("DownWeapon") && isDead == false && bossCantDamage == false)
             {
                 //Debug.Log("Boss has taken Damage: " + player.strength);
-                BossDamage(PlayerAttack.strength);
+                health -= PlayerAttack.strength;
                 //Debug.Log("Initiate pogo");
                 playerMove.ConstantJump();
             }
+            StartCoroutine(CollisionTimer());
             //collisionFlag = false;
     }
 

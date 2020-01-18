@@ -7,7 +7,7 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
-    [HideInInspector] public Animator anim;
+    [HideInInspector] public Animator playerAnim;
 
     //initialized private variables that can be edited in the editor
     //[Range(0,1)] [SerializeField] private float crouchSpeed = .36f;
@@ -40,8 +40,8 @@ public class PlayerController : MonoBehaviour
 
     //private bool isFalling;
 
-    private float knockbackDuration = 0.4f; //how long player is knocked back for
-    private float timeBtwDamage = 1f; //this is the cooldown between which the player can take damage
+    private float knockbackDuration = 0.3f; //how long player is knocked back for
+    private float timeBtwDamage = 1.5f; //this is the cooldown between which the player can take damage
     
     
     public int health;
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
     {
         playerAttacker = GetComponent<PlayerAttack>();
         playerMove = GetComponent<PlayerMovement>();
-        anim = GetComponent<Animator>();
+        playerAnim = GetComponent<Animator>();
         
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
         
@@ -107,38 +107,67 @@ public class PlayerController : MonoBehaviour
         {
             StateManager.instance.directionalFacing = StateManager.Directional.NEUTRAL;
         }
+        if(Input.GetKey(KeyCode.LeftShift) && StateManager.instance.playerState != StateManager.PlayerStates.HOLD && !StateManager.instance.attackCooldown && !StateManager.instance.isStanceChanging)
+        {
+            StateManager.instance.switchStance = true;
+            StateManager.instance.isStanceChanging = true;
+        }
 
-        if(!StateManager.instance.inCooldown && Input.GetKey(KeyCode.K) && StateManager.instance.playerState != StateManager.PlayerStates.HOLD)
+        if(!StateManager.instance.attackCooldown && Input.GetKey(KeyCode.K) && StateManager.instance.playerState != StateManager.PlayerStates.HOLD)
             playerAttacker.Attack();
 
-        if(Input.GetKey(KeyCode.J) && StateManager.instance.playerState != StateManager.PlayerStates.HOLD)
-            playerMove.QuickDash();
+        if(Input.GetKey(KeyCode.J) && StateManager.instance.playerState != StateManager.PlayerStates.HOLD && StateManager.instance.stance)// this is if you dont want to be able to dodge out of an attack mid attack:  && !StateManager.instance.isAttacking)
+            playerMove.BackDash();
+        else if(Input.GetKey(KeyCode.J) && StateManager.instance.playerState != StateManager.PlayerStates.HOLD && StateManager.instance.stance == false)
+            playerMove.ForwardDash();
 
-
+        
         //animation triggers
         if(m_Rigidbody2D.velocity.y <= 0 && !StateManager.instance.playerGrounded)
         {
             //anim.SetBool("airRising", false);
-            anim.SetTrigger("airFalling");
+            playerAnim.SetBool("airFalling", true);
+            playerAnim.SetBool("airRising", false);
         }
         else if(m_Rigidbody2D.velocity.y > 0 && !StateManager.instance.playerGrounded)
         {
-            anim.SetTrigger("airRising");
+            playerAnim.SetBool("airRising", true);
+            playerAnim.SetBool("airFalling", false);
             //anim.SetBool("airFalling", false);
         }
-        anim.SetBool("Attacking", StateManager.instance.isAttacking);
-        anim.SetBool("attackCooldown", StateManager.instance.inCooldown);
+        else if((m_Rigidbody2D.velocity.y == 0 && !StateManager.instance.playerGrounded) || StateManager.instance.playerGrounded)
+        {
+            playerAnim.SetBool("airRising", false);
+            playerAnim.SetBool("airFalling", false);
+        }
+
+
         if(StateManager.instance.playerState == StateManager.PlayerStates.MOVING)
-            anim.SetBool("Walking", true);
+            playerAnim.SetBool("Walking", true);
         else
-            anim.SetBool("Walking", false);
+            playerAnim.SetBool("Walking", false);
+
+        playerAnim.SetBool("Attacking", StateManager.instance.isAttacking);
+        playerAnim.SetBool("attackCooldown", StateManager.instance.attackCooldown);        
+        playerAnim.SetBool("Grounded", StateManager.instance.playerGrounded);
+        playerAnim.SetBool("AttackContinue", StateManager.instance.attackContinue);
+        playerAnim.SetBool("Knockback", StateManager.instance.knockback);
+        playerAnim.SetBool("StanceSwitch", StateManager.instance.switchStance);
+        playerAnim.SetBool("isStanceChanging", StateManager.instance.isStanceChanging);
+        playerAnim.SetBool("inStance", StateManager.instance.stance);
+        playerAnim.SetBool("AttackInitiate", StateManager.instance.attackInitiate);
+        playerAnim.SetBool("Landing", StateManager.instance.hasLanded);
+        playerAnim.SetBool("cantDamage", StateManager.instance.cantDamage);
+        playerAnim.SetBool("AttackContinue", StateManager.instance.attackContinue);
+
+        //anim.SetBool("Landing", false);    //ensures that landing animation is not true for any frame past the frame that the character lands
     }
 
     private void landingAnimation()
     {
         //anim.SetBool("airRising", false);
         //anim.SetBool("airFalling", false);
-        anim.SetTrigger("Landing");
+        StateManager.instance.hasLanded = true;
     }
 
     public void TriggerLandEvent()
@@ -201,9 +230,9 @@ public class PlayerController : MonoBehaviour
         Vector3 oppositeDir = (attacker - m_Rigidbody2D.transform.position).normalized;
         //sets up the angle at which the player will be knocked back, using the direction determined from the above collision data
         if(oppositeDir.x >= 0)
-            knockbackDir = new Vector3(transform.position.x - 13, transform.position.y + 15, transform.position.z);
+            knockbackDir = new Vector3(transform.position.x - 10, transform.position.y + 12, transform.position.z);
         else
-            knockbackDir = new Vector3(transform.position.x + 13, transform.position.y + 15, transform.position.z);
+            knockbackDir = new Vector3(transform.position.x + 10, transform.position.y + 12, transform.position.z);
         //the x and y position modifiers are mostly for finding which angle to send the player at during knockback but also affects magnitude
         //knockbackDirRight = new Vector3(transform.position.x - 12, transform.position.y + 10, transform.position.z);
         //knockbackDirLeft = new Vector3(transform.position.x + 12, transform.position.y + 10, transform.position.z);

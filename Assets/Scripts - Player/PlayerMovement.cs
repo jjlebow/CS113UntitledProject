@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 direction = new Vector2(0,-1);
     //this adjusts the length for the raycast that recognizes if grounded or not
-    private float raycastMaxDistance = 1f;
+    private float raycastMaxDistance = 0.27f;
     public float fallMultiplier;
     public float lowJumpMultiplier;
 
@@ -51,9 +51,7 @@ public class PlayerMovement : MonoBehaviour
         RaycastCheckUpdateGround();
         if(StateManager.instance.knockback)
             transform.position = Vector3.Lerp(transform.position, controller.knockbackDir, Time.deltaTime * 0.5f);
-        else if(StateManager.instance.inCooldown && StateManager.instance.playerGrounded)
-            controller.m_Rigidbody2D.velocity = new Vector3(0,0,0);
-        else if(StateManager.instance.playerState != StateManager.PlayerStates.HOLD && !StateManager.instance.inCooldown)//StateManager.instance.knockback == false)//
+        else if(StateManager.instance.playerState != StateManager.PlayerStates.HOLD)//StateManager.instance.knockback == false)//
         {
             horizontal = Input.GetAxisRaw("Horizontal") * runningSpeed;
             if(Input.GetButtonDown("Jump") && !cantJump)
@@ -149,12 +147,12 @@ public class PlayerMovement : MonoBehaviour
                 if(move > 0 && !StateManager.instance.faceRight)
                 {
                     Flip();
-                    StateManager.instance.faceRight = true;
+                    //StateManager.instance.faceRight = true;
                 }
                 else if(move < 0 && StateManager.instance.faceRight)
                 {
                     Flip();
-                    StateManager.instance.faceRight = false;
+                    //StateManager.instance.faceRight = false;
                 }
             }
             //This is called when the player jumps and they are grounded
@@ -209,7 +207,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Flip()
     {
-        if(!StateManager.instance.isAttacking)
+        if(!StateManager.instance.isAttacking && !StateManager.instance.stance)
         {
             //switches the way the player is facing
             StateManager.instance.faceRight = !StateManager.instance.faceRight;
@@ -259,17 +257,31 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void QuickDash()
+    public void BackDash()
     {
         if(canDash)
         {
             if(!StateManager.instance.playerGrounded)
                 canDash = false;
+            //controller.m_Rigidbody2D.gravityScale = 0.0f;
+            if(StateManager.instance.faceRight)
+                controller.m_Rigidbody2D.velocity = new Vector3(-5,0,0);
+            else
+                controller.m_Rigidbody2D.velocity = new Vector3(5,0,0);
+            StartCoroutine(DashDuration());
+        }
+    }
+
+    public void ForwardDash()
+    {
+        if(canDash)
+        {
+            canDash = false;
             controller.m_Rigidbody2D.gravityScale = 0.0f;
             if(StateManager.instance.faceRight)
-                controller.m_Rigidbody2D.velocity = new Vector3(10,0,0);
+                controller.m_Rigidbody2D.velocity = new Vector3(7,0,0);
             else
-                controller.m_Rigidbody2D.velocity = new Vector3(-10,0,0);
+                controller.m_Rigidbody2D.velocity = new Vector3(-7,0,0);
             StartCoroutine(DashDuration());
         }
     }
@@ -289,7 +301,8 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
         StateManager.instance.playerState = StateManager.PlayerStates.IDLE;
-        controller.m_Rigidbody2D.gravityScale = 1.0f;
+        if(StateManager.instance.stance == false)
+            controller.m_Rigidbody2D.gravityScale = 1.0f;
         copy = dashCooldown - dashDuration;
         while(copy > 0)
         {

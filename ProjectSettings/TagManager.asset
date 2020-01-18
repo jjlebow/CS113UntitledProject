@@ -8,6 +8,7 @@ TagManager:
   - Boss
   - Weapon
   - DownWeapon
+  - StateManager
   layers:
   - Default
   - TransparentFX

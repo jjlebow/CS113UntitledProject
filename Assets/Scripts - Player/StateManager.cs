@@ -9,21 +9,28 @@ public class StateManager : MonoBehaviour
     public static StateManager instance = null;
 
     public bool playerGrounded;
-    public bool inCooldown = false;
-    public bool isAttacking = false;
+    public bool attackCooldown = false;   //this stops only the player from attacking again.
+    public bool isAttacking = false;   //this is the whole period of the attack animation
     public bool jump = false;
     public bool isJumping = false;
     public bool crouch = false;
     public bool cantDamage = false;
     public bool faceRight = true;
     public bool knockback = false;
+    public bool attackContinue = false;
+    public bool attackInitiate = false;
+    public bool hasLanded = false;
+    //public bool cantAttack = false;
+    public bool stance = false;
+    public bool switchStance = false;
+    public bool isStanceChanging = false;   //this represents the duration of the stance changing
 
     public enum PlayerStates
     {
         IDLE,
         MOVING,
         DEAD,
-        HOLD
+        HOLD               //Being in HOLD stops EVERYTHING the player can do
         //AIRFALLING,
         //AIRRISING
         //BACKWARDS MOVE (Strafe mid combo option)
@@ -46,7 +53,4 @@ public class StateManager : MonoBehaviour
             Destroy(gameObject);
         playerState = PlayerStates.IDLE;
     }
-
-
-
 }
