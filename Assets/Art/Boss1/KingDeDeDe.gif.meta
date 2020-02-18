@@ -1,0 +1,4327 @@
+fileFormatVersion: 2
+guid: c56aaf60ae41dea47b9853ac0b84de1a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2720672329753597541
+    second: KingDeDeDe_0
+  - first:
+      213: 9138888071473504237
+    second: KingDeDeDe_1
+  - first:
+      213: -2043710951994238698
+    second: KingDeDeDe_2
+  - first:
+      213: 5712886624939711934
+    second: KingDeDeDe_3
+  - first:
+      213: -3711527068565421937
+    second: KingDeDeDe_4
+  - first:
+      213: -3289673346897918129
+    second: KingDeDeDe_5
+  - first:
+      213: -2900476879467294169
+    second: KingDeDeDe_6
+  - first:
+      213: 1575966198869652485
+    second: KingDeDeDe_7
+  - first:
+      213: 3615924788058639653
+    second: KingDeDeDe_8
+  - first:
+      213: 7966133360707911267
+    second: KingDeDeDe_9
+  - first:
+      213: -4585657890490391420
+    second: KingDeDeDe_10
+  - first:
+      213: -7181206641099444331
+    second: KingDeDeDe_11
+  - first:
+      213: -3557220133288516650
+    second: KingDeDeDe_12
+  - first:
+      213: 5486630665816364452
+    second: KingDeDeDe_13
+  - first:
+      213: 2091219110046412749
+    second: KingDeDeDe_14
+  - first:
+      213: -78316027873036332
+    second: KingDeDeDe_15
+  - first:
+      213: 8082846521611916042
+    second: KingDeDeDe_16
+  - first:
+      213: -8682305662635084578
+    second: KingDeDeDe_17
+  - first:
+      213: -5755918337392470297
+    second: KingDeDeDe_18
+  - first:
+      213: -9070021459337089647
+    second: KingDeDeDe_19
+  - first:
+      213: -5752305461978439405
+    second: KingDeDeDe_20
+  - first:
+      213: -4754042675410174232
+    second: KingDeDeDe_21
+  - first:
+      213: 6121592164129947926
+    second: KingDeDeDe_22
+  - first:
+      213: 4335457902414779856
+    second: KingDeDeDe_23
+  - first:
+      213: -7594815439947459473
+    second: KingDeDeDe_24
+  - first:
+      213: 3644291067887748453
+    second: KingDeDeDe_25
+  - first:
+      213: 3415410200416585771
+    second: KingDeDeDe_26
+  - first:
+      213: 7804617900729168078
+    second: KingDeDeDe_27
+  - first:
+      213: -6090502285244376842
+    second: KingDeDeDe_28
+  - first:
+      213: 6292434838388457313
+    second: KingDeDeDe_29
+  - first:
+      213: -2828112311365370710
+    second: KingDeDeDe_30
+  - first:
+      213: 390728442616130223
+    second: KingDeDeDe_31
+  - first:
+      213: -1937871551431661218
+    second: KingDeDeDe_32
+  - first:
+      213: 3147301693243637744
+    second: KingDeDeDe_33
+  - first:
+      213: -3854841962041982795
+    second: KingDeDeDe_34
+  - first:
+      213: 8475823316590096972
+    second: KingDeDeDe_35
+  - first:
+      213: 1834340586245692496
+    second: KingDeDeDe_36
+  - first:
+      213: -976889211876258091
+    second: KingDeDeDe_37
+  - first:
+      213: 6495911819649168348
+    second: KingDeDeDe_38
+  - first:
+      213: -3105839435096598236
+    second: KingDeDeDe_39
+  - first:
+      213: -4455765483227270
+    second: KingDeDeDe_40
+  - first:
+      213: 5058950703891869034
+    second: KingDeDeDe_41
+  - first:
+      213: 1650623172845166319
+    second: KingDeDeDe_42
+  - first:
+      213: -710541790440360707
+    second: KingDeDeDe_43
+  - first:
+      213: -3300262813978954638
+    second: KingDeDeDe_44
+  - first:
+      213: 836673207184122706
+    second: KingDeDeDe_45
+  - first:
+      213: 8509134359982248348
+    second: KingDeDeDe_46
+  - first:
+      213: 7499042744235295349
+    second: KingDeDeDe_47
+  - first:
+      213: 8153173040049663514
+    second: KingDeDeDe_48
+  - first:
+      213: 5107222679199968778
+    second: KingDeDeDe_49
+  - first:
+      213: 4753007857009321039
+    second: KingDeDeDe_50
+  - first:
+      213: -1306572981117482503
+    second: KingDeDeDe_51
+  - first:
+      213: 4049737989822060831
+    second: KingDeDeDe_52
+  - first:
+      213: -9066614586415578366
+    second: KingDeDeDe_53
+  - first:
+      213: -3377081460267400778
+    second: KingDeDeDe_54
+  - first:
+      213: -4107511519457950845
+    second: KingDeDeDe_55
+  - first:
+      213: -5062731751742834939
+    second: KingDeDeDe_56
+  - first:
+      213: -7745650842556095618
+    second: KingDeDeDe_57
+  - first:
+      213: 5389901297124127682
+    second: KingDeDeDe_58
+  - first:
+      213: -2065801553537419550
+    second: KingDeDeDe_59
+  - first:
+      213: 3034541835648660474
+    second: KingDeDeDe_60
+  - first:
+      213: 4160869805578073610
+    second: KingDeDeDe_61
+  - first:
+      213: 704433486431563400
+    second: KingDeDeDe_62
+  - first:
+      213: 5972135901513292176
+    second: KingDeDeDe_63
+  - first:
+      213: -1829589744137383763
+    second: KingDeDeDe_64
+  - first:
+      213: -1533528039729353748
+    second: KingDeDeDe_65
+  - first:
+      213: 6665590928857454276
+    second: KingDeDeDe_66
+  - first:
+      213: -6757686942244567541
+    second: KingDeDeDe_67
+  - first:
+      213: -1314184906877612776
+    second: KingDeDeDe_68
+  - first:
+      213: -3101040604868172064
+    second: KingDeDeDe_69
+  - first:
+      213: 6883500432008917498
+    second: KingDeDeDe_70
+  - first:
+      213: 1815214336010660112
+    second: KingDeDeDe_71
+  - first:
+      213: -8785651344599856600
+    second: KingDeDeDe_72
+  - first:
+      213: 5966117043061972387
+    second: KingDeDeDe_73
+  - first:
+      213: 3510517939770513435
+    second: KingDeDeDe_74
+  - first:
+      213: 2902213816832665892
+    second: KingDeDeDe_75
+  - first:
+      213: -4654366500575573482
+    second: KingDeDeDe_76
+  - first:
+      213: -7432687773787518673
+    second: KingDeDeDe_77
+  - first:
+      213: 8458846528857562794
+    second: KingDeDeDe_78
+  - first:
+      213: 1051419344147592864
+    second: KingDeDeDe_79
+  - first:
+      213: -2078912565960463818
+    second: KingDeDeDe_80
+  - first:
+      213: -5877021375866259683
+    second: KingDeDeDe_81
+  - first:
+      213: 2564586973862486498
+    second: KingDeDeDe_82
+  - first:
+      213: 856590446517464795
+    second: KingDeDeDe_83
+  - first:
+      213: 8089902844527421144
+    second: KingDeDeDe_84
+  - first:
+      213: 414281445271859143
+    second: KingDeDeDe_85
+  - first:
+      213: 3840508099638710016
+    second: KingDeDeDe_86
+  - first:
+      213: 3654521500578531606
+    second: KingDeDeDe_87
+  - first:
+      213: -3707184283666797376
+    second: KingDeDeDe_88
+  - first:
+      213: 9121198483531394776
+    second: KingDeDeDe_89
+  - first:
+      213: 5639313364214586810
+    second: KingDeDeDe_90
+  - first:
+      213: 451398381025927975
+    second: KingDeDeDe_91
+  - first:
+      213: 1433184131334350536
+    second: KingDeDeDe_92
+  - first:
+      213: 2392853989663454848
+    second: KingDeDeDe_93
+  - first:
+      213: -5722958599816193875
+    second: KingDeDeDe_94
+  - first:
+      213: -422414486974053662
+    second: KingDeDeDe_95
+  - first:
+      213: -8438797563366907393
+    second: KingDeDeDe_96
+  - first:
+      213: 6405024469849128039
+    second: KingDeDeDe_97
+  - first:
+      213: 6960330143299546643
+    second: KingDeDeDe_98
+  - first:
+      213: -1651882212297618979
+    second: KingDeDeDe_99
+  - first:
+      213: 1909047809654332247
+    second: KingDeDeDe_100
+  - first:
+      213: -6841892504279902523
+    second: KingDeDeDe_101
+  - first:
+      213: -7587900538845718035
+    second: KingDeDeDe_102
+  - first:
+      213: 6965297700030467652
+    second: KingDeDeDe_103
+  - first:
+      213: 5340887367907580970
+    second: KingDeDeDe_104
+  - first:
+      213: -1324250390562451446
+    second: KingDeDeDe_105
+  - first:
+      213: 2234131099762487437
+    second: KingDeDeDe_106
+  - first:
+      213: 4706296355137995194
+    second: KingDeDeDe_107
+  - first:
+      213: 8499861707707761238
+    second: KingDeDeDe_108
+  - first:
+      213: -9017839495913968308
+    second: KingDeDeDe_109
+  - first:
+      213: 343615784719910622
+    second: KingDeDeDe_110
+  - first:
+      213: 5506909994357683169
+    second: KingDeDeDe_111
+  - first:
+      213: -127958765573141902
+    second: KingDeDeDe_112
+  - first:
+      213: -4233560356055055930
+    second: KingDeDeDe_113
+  - first:
+      213: -5497833538091586727
+    second: KingDeDeDe_114
+  - first:
+      213: 3304033912059181282
+    second: KingDeDeDe_115
+  - first:
+      213: -2763667550614630765
+    second: KingDeDeDe_116
+  - first:
+      213: 153044706370611958
+    second: KingDeDeDe_117
+  - first:
+      213: 9018492169509791347
+    second: KingDeDeDe_118
+  - first:
+      213: -5385821404490760966
+    second: KingDeDeDe_119
+  - first:
+      213: -6488919841362232617
+    second: KingDeDeDe_120
+  - first:
+      213: 7009414235762823327
+    second: KingDeDeDe_121
+  - first:
+      213: 6551093208098338915
+    second: KingDeDeDe_122
+  - first:
+      213: 8213603713921549569
+    second: KingDeDeDe_123
+  - first:
+      213: -3814743439608786092
+    second: KingDeDeDe_124
+  - first:
+      213: -2889668457870383678
+    second: KingDeDeDe_125
+  - first:
+      213: 4722947494932771945
+    second: KingDeDeDe_126
+  - first:
+      213: 4025006798166678995
+    second: KingDeDeDe_127
+  - first:
+      213: -5793209140471838817
+    second: KingDeDeDe_128
+  - first:
+      213: -6630329121970221512
+    second: KingDeDeDe_129
+  - first:
+      213: -4492207162234950241
+    second: KingDeDeDe_130
+  - first:
+      213: -2866961461010469579
+    second: KingDeDeDe_131
+  - first:
+      213: 8022896773614513247
+    second: KingDeDeDe_132
+  - first:
+      213: -8706921357943448509
+    second: KingDeDeDe_133
+  - first:
+      213: 6900487107099218437
+    second: KingDeDeDe_134
+  - first:
+      213: -7911041334447749113
+    second: KingDeDeDe_135
+  - first:
+      213: 3938544256026074657
+    second: KingDeDeDe_136
+  - first:
+      213: 5688224411409156464
+    second: KingDeDeDe_137
+  - first:
+      213: 3048138292565553842
+    second: KingDeDeDe_138
+  - first:
+      213: 4795481799177675766
+    second: KingDeDeDe_139
+  - first:
+      213: 3315673906461922733
+    second: KingDeDeDe_140
+  - first:
+      213: -5517973223641113601
+    second: KingDeDeDe_141
+  - first:
+      213: 8824725153529065179
+    second: KingDeDeDe_142
+  - first:
+      213: 7970725499019113431
+    second: KingDeDeDe_143
+  - first:
+      213: -751192901092625891
+    second: KingDeDeDe_144
+  - first:
+      213: -634058381877625088
+    second: KingDeDeDe_145
+  - first:
+      213: 1916577508298749759
+    second: KingDeDeDe_146
+  - first:
+      213: 7562233076637924692
+    second: KingDeDeDe_147
+  - first:
+      213: 6759064733830662509
+    second: KingDeDeDe_148
+  - first:
+      213: 7515377627806851923
+    second: KingDeDeDe_149
+  - first:
+      213: 930118351309675876
+    second: KingDeDeDe_150
+  - first:
+      213: 3532027542831323240
+    second: KingDeDeDe_151
+  - first:
+      213: -2379044942209352475
+    second: KingDeDeDe_152
+  - first:
+      213: -6912741055426636042
+    second: KingDeDeDe_153
+  - first:
+      213: 3994538448769977419
+    second: KingDeDeDe_154
+  - first:
+      213: 6752419303015405675
+    second: KingDeDeDe_155
+  - first:
+      213: -1471304355284548636
+    second: KingDeDeDe_156
+  - first:
+      213: -5690195236351252170
+    second: KingDeDeDe_157
+  - first:
+      213: 4489209910989532092
+    second: KingDeDeDe_158
+  - first:
+      213: 6515439192828847611
+    second: KingDeDeDe_159
+  - first:
+      213: -8171343299728246694
+    second: KingDeDeDe_160
+  - first:
+      213: 3479603449644971601
+    second: KingDeDeDe_161
+  - first:
+      213: -7157252958420935573
+    second: KingDeDeDe_162
+  - first:
+      213: -4937003335921311994
+    second: KingDeDeDe_163
+  - first:
+      213: -4683498874650969893
+    second: KingDeDeDe_164
+  - first:
+      213: -4716973836625567809
+    second: KingDeDeDe_165
+  - first:
+      213: -6423218954974757690
+    second: KingDeDeDe_166
+  - first:
+      213: 9219315302271586204
+    second: KingDeDeDe_167
+  - first:
+      213: -1210613801178760200
+    second: KingDeDeDe_168
+  - first:
+      213: 6697143666134686165
+    second: KingDeDeDe_169
+  - first:
+      213: -7361582020130155902
+    second: KingDeDeDe_170
+  - first:
+      213: -1802129031743740150
+    second: KingDeDeDe_171
+  - first:
+      213: 1154997288193799679
+    second: KingDeDeDe_172
+  - first:
+      213: 5788918467533335748
+    second: KingDeDeDe_173
+  - first:
+      213: 3242241893528335147
+    second: KingDeDeDe_174
+  - first:
+      213: 6261305952652942070
+    second: KingDeDeDe_175
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 13
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KingDeDeDe_0
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 616
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ac3be57ec2eb34f99ae81997ae25ae
+      internalID: -2720672329753597541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_1
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 616
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b87e35d7ad576240ba15d56f7be4a98
+      internalID: 9138888071473504237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_2
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 616
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77a3ca64846f5042ad1c11893a1a15e
+      internalID: -2043710951994238698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 616
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43b5199f9108bd469b9859d05a666d6
+      internalID: 5712886624939711934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_4
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 616
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eda87fc07f1c92449ca761f1b846a83
+      internalID: -3711527068565421937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_5
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 616
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9adb8d9661e12d94db4c9befc2072ad6
+      internalID: -3289673346897918129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_6
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 616
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957c190647e17824aa044b5347a2f45a
+      internalID: -2900476879467294169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_7
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 616
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17663c0006304b440bb6fdbae43d3263
+      internalID: 1575966198869652485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_8
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 618
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f1ab34b4f09914e9a51d246e555a1a
+      internalID: 3615924788058639653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_9
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 616
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12a846db884cbb49bafef08e333d0cb
+      internalID: 7966133360707911267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 584
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9f54a6d40ce2b4ba9bae4e7cd28b8a
+      internalID: -4585657890490391420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_11
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 584
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9bee7b54b8cb849b4d7b1a4e298ebd
+      internalID: -7181206641099444331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_12
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 584
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c98789c2864c6242b8737fb9a1dbac9
+      internalID: -3557220133288516650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_13
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 584
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8027d35d82fb424f8293374a589dbe6
+      internalID: 5486630665816364452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_14
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 584
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ce5ee51f6d4804984b498f61343ff2
+      internalID: 2091219110046412749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_15
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 584
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c170e3fe780e434b9ebe6da75c959dd
+      internalID: -78316027873036332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_16
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 584
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52538fac9abdd304d80f17a19331a376
+      internalID: 8082846521611916042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_17
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 584
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d94f53a05b542044a3b94dafdb9cdba
+      internalID: -8682305662635084578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_18
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 588
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5588dfa4c2879488784baaccfa8bdd
+      internalID: -5755918337392470297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_19
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 586
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d5400f3b3707940ad97d8899a7241d
+      internalID: -9070021459337089647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_20
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 552
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdea06d10e4fd0947a1240d40a55aa60
+      internalID: -5752305461978439405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_21
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 552
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a6dab2e88bcc647af423692b24ff32
+      internalID: -4754042675410174232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_22
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 552
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7ed8b8ca517464c95fc425eb21a90c
+      internalID: 6121592164129947926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_23
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 552
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b685b272f177e4b829ecd614a147e3
+      internalID: 4335457902414779856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_24
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 552
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2400f07e951d2d0488ca59d44f8ae54f
+      internalID: -7594815439947459473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_25
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 552
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9e6f26278078f418f30f3944842580
+      internalID: 3644291067887748453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_26
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 552
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251bc60838edfb244bbc5a6cc929f97a
+      internalID: 3415410200416585771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_27
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 552
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1fc01cf493757419faea0850f5bc6f
+      internalID: 7804617900729168078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_28
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 555
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd5c85b80f804a44ba58d3981245dca
+      internalID: -6090502285244376842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_29
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 552
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9297ed8ed0e0d8c40b1e0f41cbe4cfae
+      internalID: 6292434838388457313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_30
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 555
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87da02247cd5124589069e153081644
+      internalID: -2828112311365370710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_31
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 552
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b86cbba9ad987144811d5d0aba38725
+      internalID: 390728442616130223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_32
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 517
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651d915db669dc54b897220734696492
+      internalID: -1937871551431661218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_33
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 517
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20e4fde7b42e414fb637d140164787b
+      internalID: 3147301693243637744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_34
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 517
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7871db0d5a6ac704db359ba1f830648d
+      internalID: -3854841962041982795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_35
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 517
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a39dbaa319f3a41b5aeca83ac4a41f
+      internalID: 8475823316590096972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_36
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 517
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6741534e09c91643be8d24f1fe4aec8
+      internalID: 1834340586245692496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_37
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 517
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6e882ca2fcee04ebcc8f77b845fafd
+      internalID: -976889211876258091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_38
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 517
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b25e05108f50e24da10db167a7bbe18
+      internalID: 6495911819649168348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_39
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 517
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138b8944b8b7b2a4594b6455b972a45c
+      internalID: -3105839435096598236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_40
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 520
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c676d0cee5fd04e4aabdead952d95fce
+      internalID: -4455765483227270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_41
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 517
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa89655ec83c126479212dacb4a42325
+      internalID: 5058950703891869034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_42
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 482
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c1e12cbdebe874b8f2beae53b5d97d
+      internalID: 1650623172845166319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_43
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 482
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6180fd2e59cb343b213d9ca4401269
+      internalID: -710541790440360707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_44
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 482
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e88335ffd1c9894dba3718f80becd57
+      internalID: -3300262813978954638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_45
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 482
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066a0a2ce3cfc444eb402837a78d390a
+      internalID: 836673207184122706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_46
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 482
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe8e93d15286064ebfc7ec261f99a36
+      internalID: 8509134359982248348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_47
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 482
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c3670134e4d8e49a07cf86da205493
+      internalID: 7499042744235295349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_48
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 482
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878d7789f937993449a8ca4875c9b1e1
+      internalID: 8153173040049663514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_49
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 482
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220a18b84b394fc4281a38bc6a549454
+      internalID: 5107222679199968778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_50
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 485
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd383f946065864d8dda96b4930096d
+      internalID: 4753007857009321039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_51
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 482
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c113a4811f5e18240a1ecc0095314676
+      internalID: -1306572981117482503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_52
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 447
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a94c4fe0d1b1545b0f8fc16db46191
+      internalID: 4049737989822060831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_53
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 447
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df559373619baa4d9bc15309ac5f196
+      internalID: -9066614586415578366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_54
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 447
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311277e81bbc9f0469ce270663b4d105
+      internalID: -3377081460267400778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_55
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 447
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace0e01b9dbe1a7478cfb3561934d4eb
+      internalID: -4107511519457950845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_56
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 447
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f63693e25476d441b93850be47dc9ed
+      internalID: -5062731751742834939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_57
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 447
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881b7b900159a0947b572d7750f83d53
+      internalID: -7745650842556095618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_58
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 447
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05c4671a3ddf6345a31bd9e4ba1fe3f
+      internalID: 5389901297124127682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_59
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 447
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a79942d6983b54aa62f1da9848d398
+      internalID: -2065801553537419550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_60
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 450
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e172fa8944d75cb46a99480b16d501ef
+      internalID: 3034541835648660474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_61
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 447
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2790b6a1b2e3a845a51ecd9b2056610
+      internalID: 4160869805578073610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_62
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 412
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6864be94c8bd95a4ea5733ad8b2b213e
+      internalID: 704433486431563400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_63
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 412
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f535805c6e83bf4dad89459a48c82bb
+      internalID: 5972135901513292176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_64
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 412
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a41c0e793686c47a03e4b5e51d34d1
+      internalID: -1829589744137383763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_65
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 412
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a396d80f27663a43a2e6eeec4a60be9
+      internalID: -1533528039729353748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_66
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 412
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a06a4e91eb198478294cf8ae5d0f32
+      internalID: 6665590928857454276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_67
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 412
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfdc4219c806a34a8b452655c7df648
+      internalID: -6757686942244567541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_68
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 412
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5e4a9711256934cb77cfdc79839507
+      internalID: -1314184906877612776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_69
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 412
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ed30a1c6785394fb9613d2ffb223f3
+      internalID: -3101040604868172064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_70
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 411
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd7b18ff8054fc4d856b9511dd3e786
+      internalID: 6883500432008917498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_71
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 414
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01dd36060e041240a07f55d91c5e95a
+      internalID: 1815214336010660112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_72
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 412
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331d4653bfc713b4586bc11ebb49e735
+      internalID: -8785651344599856600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_73
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 374
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f3e6ec7e5ba8143943b4fd30b9ef02
+      internalID: 5966117043061972387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_74
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 374
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146929245e262c54bab72f4bde987dfc
+      internalID: 3510517939770513435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_75
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 374
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51bec85ab353a8458f961e6afc9257c
+      internalID: 2902213816832665892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_76
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 374
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e42c37d74e08a43864ce8aca99ba71
+      internalID: -4654366500575573482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_77
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 374
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5036e4f3e32bb0049963de9abf6eabfd
+      internalID: -7432687773787518673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_78
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 374
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df27bffccee47ae4ba5421c77507f43c
+      internalID: 8458846528857562794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_79
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 374
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6ce543b5b712b4cbf88a1fc4d19a16
+      internalID: 1051419344147592864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_80
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 376
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f9498febfc44e4cb64c17b102459b5
+      internalID: -2078912565960463818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_81
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 374
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974f9953b474a8146aa396c8fcf07f73
+      internalID: -5877021375866259683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_82
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 335
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6492c136241808479df504259efa849
+      internalID: 2564586973862486498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_83
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 335
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d3b326869a81c4d85574685f0b802f
+      internalID: 856590446517464795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_84
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 335
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806dadbee1620f04a86c1fd05fca5a39
+      internalID: 8089902844527421144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_85
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 335
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ca043e8946bde4685b46b4c0029913
+      internalID: 414281445271859143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_86
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 336
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38008acc001086469871b157621ecca
+      internalID: 3840508099638710016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_87
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 335
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1d59408c1b580498fefb035d9c201d
+      internalID: 3654521500578531606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_88
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 335
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ebad13401e49814cbb130440c7338f3
+      internalID: -3707184283666797376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_89
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 335
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a82f5dd1c46b84fbe67aa9be920c82
+      internalID: 9121198483531394776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_90
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 335
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f158f214352ae6741b247e0744a00c33
+      internalID: 5639313364214586810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_91
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 338
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332902aea44bcec40a8e544607bbfd92
+      internalID: 451398381025927975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_92
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 335
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6ae669403527d41b4aa65e15551e16
+      internalID: 1433184131334350536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_93
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 298
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308ab3b0c3a80b940b9096b5b5cde233
+      internalID: 2392853989663454848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_94
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 298
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b3581846289e2458f645a1941ff688
+      internalID: -5722958599816193875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_95
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 298
+        width: 45
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83797999ee1b8b47a2dff7f993400bd
+      internalID: -422414486974053662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_96
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 298
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4a07c13605d294abb6899473de89f9
+      internalID: -8438797563366907393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_97
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 298
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86fa9eb3700db2b48b11acd0dcef54ec
+      internalID: 6405024469849128039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_98
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 298
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9797074a23f9ab94b9b24fcc695eb0e4
+      internalID: 6960330143299546643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_99
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 300
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ce2dd4ff8a70d4490082a6e3d53cb4
+      internalID: -1651882212297618979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_100
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 298
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae68dbe6d7af664186761db2e3f7aa2
+      internalID: 1909047809654332247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_101
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 298
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8981dcee1db6f5243852b6c1149d64a3
+      internalID: -6841892504279902523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_102
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 298
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f87dcded928c9e4e97cc1ffa494cda2
+      internalID: -7587900538845718035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_103
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 260
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab047c3a8e3d7948a41691b51bf15d8
+      internalID: 6965297700030467652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_104
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 260
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d34c3cff3dfe8489977c7f77c0fbd2
+      internalID: 5340887367907580970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_105
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 260
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50f000b2dbdc5742a81e25d2ba032ad
+      internalID: -1324250390562451446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_106
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 260
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f09c38f45fe5648b5d7c8e3d9dd263
+      internalID: 2234131099762487437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_107
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 268
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389ddf9dae259e447be4f4e635dd4d3d
+      internalID: 4706296355137995194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_108
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 260
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c94d24246445984aba0c5cdcb7a395d
+      internalID: 8499861707707761238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_109
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 260
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94352389303fe72459dd2c1b83be9e22
+      internalID: -9017839495913968308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_110
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 260
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797d64fc69140d4429722d86eae15bcf
+      internalID: 343615784719910622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_111
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 260
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eca693ca633b0447b4a86dce928b465
+      internalID: 5506909994357683169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_112
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 260
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e981d91a06ee4e4e9ed9e8d695efd2f
+      internalID: -127958765573141902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_113
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 260
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd68057db956a094bbd6b207a0025d3a
+      internalID: -4233560356055055930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_114
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 262
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f8bcb51b23b34479edadff6f90db14
+      internalID: -5497833538091586727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_115
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 260
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15e1b82c97c17c4aa3cb967f4952c40
+      internalID: 3304033912059181282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_116
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 214
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a50efa1a32c095042a16fdaf3f6d98bd
+      internalID: -2763667550614630765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_117
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 214
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fd06c50d3606b4ab70ea0c7dfa866d
+      internalID: 153044706370611958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_118
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 214
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1973316fd1343d4da366b00a1b4cd16
+      internalID: 9018492169509791347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_119
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 214
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a868be601aefd1b41b87d6d8700e17a9
+      internalID: -5385821404490760966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_120
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 214
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8097953169bfede418bd86e720e966ce
+      internalID: -6488919841362232617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_121
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 214
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaad052340fe2174a9002bdf35bfc339
+      internalID: 7009414235762823327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_122
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 214
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b22fd00becab04a8992754e8703ad0
+      internalID: 6551093208098338915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_123
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 214
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b649d799b0dbdd40a64eff9e6760893
+      internalID: 8213603713921549569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_124
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 216
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7c40bbc9cc9754aa77e1a4f8ba787a
+      internalID: -3814743439608786092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_125
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 214
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8fb62dbea305d44beafc70013725e4
+      internalID: -2889668457870383678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_126
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 161
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1855c7b0711258244a7f568067adbab8
+      internalID: 4722947494932771945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_127
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 161
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752876af39b079d4889bcf0b32226650
+      internalID: 4025006798166678995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_128
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 161
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f71433978b622b46ab644918263e65a
+      internalID: -5793209140471838817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_129
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 161
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9928d308cb93044935d61afc281231
+      internalID: -6630329121970221512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_130
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 161
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9f9a29931edd246a4cd329c7bcf5e9
+      internalID: -4492207162234950241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_131
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 161
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b11c0911e8fbc4e88f2f2c21cca63f
+      internalID: -2866961461010469579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_132
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 161
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f384f300e8d2840bab4581e4fb6df8
+      internalID: 8022896773614513247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_133
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 161
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18354b431c0561a4c80331d0c4290952
+      internalID: -8706921357943448509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_134
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 161
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f112646dd3a8744a523434f6c800e6
+      internalID: 6900487107099218437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_135
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 161
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a987c906c489444469b65a642e8d5dca
+      internalID: -7911041334447749113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_136
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 161
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ca5918adbe2da4a9e7700b626aba6e
+      internalID: 3938544256026074657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_137
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 163
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87ab0b9ad8195e48892f77d41361ffe
+      internalID: 5688224411409156464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_138
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 161
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0945e306d90e85541b9534a715240839
+      internalID: 3048138292565553842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_139
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 176
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8299551c8052f6741a43daf57a10c554
+      internalID: 4795481799177675766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_140
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 161
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4596bd50bb2aa314288911b022d51282
+      internalID: 3315673906461922733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_141
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 161
+        width: 19
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8de63199012924098c21d0a9abff16
+      internalID: -5517973223641113601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_142
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 161
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28db939d492cc8249a7634424a54e0cb
+      internalID: 8824725153529065179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_143
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 161
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb54a72db98f77f4b8bde702742e1775
+      internalID: 7970725499019113431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_144
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 126
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2100ed524f7105f4dac90346e8969cd8
+      internalID: -751192901092625891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_145
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 126
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b45bfab3c677746a07dbaeb2e0d390
+      internalID: -634058381877625088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_146
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 126
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9280c913ed5624298e50369a95447d
+      internalID: 1916577508298749759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_147
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 126
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3826aad07920e8145b8e991441a3a8f2
+      internalID: 7562233076637924692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_148
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 126
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e91e86dab9f44b4cb60b189db29e0e0
+      internalID: 6759064733830662509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_149
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 126
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85f19711b7d3d94b95b0e90bd489779
+      internalID: 7515377627806851923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_150
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 127
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5660d81033d73ed449a651ee981d8457
+      internalID: 930118351309675876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_151
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 126
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10087a4b4527784e8dc11b3390bc610
+      internalID: 3532027542831323240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_152
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 88
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2d3d1cbd0a9564da0042a8ab4ff7c0
+      internalID: -2379044942209352475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_153
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 88
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b017be8659428bc409f73737760f66b2
+      internalID: -6912741055426636042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_154
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 88
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc96af9c61d3ed9409b8157ec2cfc698
+      internalID: 3994538448769977419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_155
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 88
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c8cec98f842e847ad5bcf0a163fbc2
+      internalID: 6752419303015405675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_156
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 89
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276a3259d65fb15419716fd103cc2139
+      internalID: -1471304355284548636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_157
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 51
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097500788baf6134ea32399cdf19c11c
+      internalID: -5690195236351252170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_158
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 51
+        width: 56
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ca3ea32a6989e4a99dd0f4336925b7
+      internalID: 4489209910989532092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_159
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 43
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c006e1e6a44de4e45bb314d38dcd83d9
+      internalID: 6515439192828847611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_160
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 80
+        width: 47
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8392078644176a4e9df753fc097060e
+      internalID: -8171343299728246694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_161
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 79
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074c35b963d90184b87c925d83004a6d
+      internalID: 3479603449644971601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_162
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 61
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98941142d8373c47a2919ed61770de2
+      internalID: -7157252958420935573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_163
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 61
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b82d7432fbb830408c3738387d17e89
+      internalID: -4937003335921311994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_164
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 61
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32191c96e17cbbf438a74ad676588ff4
+      internalID: -4683498874650969893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_165
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 51
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58d2b26104c43244aba0570ecd52ec8
+      internalID: -4716973836625567809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_166
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 51
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2965db255744f2a4fb733c440a912b05
+      internalID: -6423218954974757690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_167
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 62
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221a670d244d7834d95f0d224fcfb88e
+      internalID: 9219315302271586204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_168
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 53
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75e9a35523fa5f47845a0c182527e2e
+      internalID: -1210613801178760200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_169
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 42
+        width: 36
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305bc05d72d37c84a8944c692f21e3f9
+      internalID: 6697143666134686165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_170
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 42
+        width: 36
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4514e67112a7b4b4993396de574577b6
+      internalID: -7361582020130155902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_171
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 42
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11443c6c6b7b4b45aca28ef2f25d93b
+      internalID: -1802129031743740150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_172
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 42
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7190ec52c04d94891e09b199765168
+      internalID: 1154997288193799679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_173
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 42
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a02f6716fdcab44d962c1d50c02ac80
+      internalID: 5788918467533335748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_174
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 43
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75eea909ce7586842a2b4c56fe4bc04a
+      internalID: 3242241893528335147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingDeDeDe_175
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1
+        width: 174
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515d82a0f3a65f448973b8fdd384ac5e
+      internalID: 6261305952652942070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

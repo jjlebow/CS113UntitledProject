@@ -12,6 +12,7 @@ public class NeutralTwoComboBehavior : StateMachineBehaviour
             playerAttacker = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttack>();
         if(StateManager.instance.playerGrounded && StateManager.instance.stance == false) 
             StateManager.instance.playerState = StateManager.PlayerStates.HOLD;
+        Debug.Log("HERE");
         playerAttacker.attackTriggerNeutralCombo2.SetActive(true);
     }
 

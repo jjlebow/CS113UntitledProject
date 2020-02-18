@@ -1,0 +1,1135 @@
+fileFormatVersion: 2
+guid: 90d991a8edc59744f8caacbc64f511a4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3455532303342512983
+    second: MetaKnightTileMap_0
+  - first:
+      213: -3476584478150840455
+    second: MetaKnightTileMap_1
+  - first:
+      213: -15000360684086126
+    second: MetaKnightTileMap_2
+  - first:
+      213: 6013663030032336637
+    second: MetaKnightTileMap_3
+  - first:
+      213: 7426282038076203273
+    second: MetaKnightTileMap_4
+  - first:
+      213: -4517229516211439418
+    second: MetaKnightTileMap_5
+  - first:
+      213: 524648272559485875
+    second: MetaKnightTileMap_6
+  - first:
+      213: 1692403805440779762
+    second: MetaKnightTileMap_7
+  - first:
+      213: 4675693630734641236
+    second: MetaKnightTileMap_8
+  - first:
+      213: 5037255684963458682
+    second: MetaKnightTileMap_9
+  - first:
+      213: 7423207026636882505
+    second: MetaKnightTileMap_10
+  - first:
+      213: -5605436411295312442
+    second: MetaKnightTileMap_11
+  - first:
+      213: -3612365912061390550
+    second: MetaKnightTileMap_12
+  - first:
+      213: 5683961552460927292
+    second: MetaKnightTileMap_13
+  - first:
+      213: 2612483733610008797
+    second: MetaKnightTileMap_14
+  - first:
+      213: -7654132057646354339
+    second: MetaKnightTileMap_15
+  - first:
+      213: 3692406423177741276
+    second: MetaKnightTileMap_16
+  - first:
+      213: -239120142657784924
+    second: MetaKnightTileMap_17
+  - first:
+      213: 3811322872250222791
+    second: MetaKnightTileMap_18
+  - first:
+      213: 6819618183923453847
+    second: MetaKnightTileMap_19
+  - first:
+      213: -5122753504535148962
+    second: MetaKnightTileMap_20
+  - first:
+      213: -5723058433908696270
+    second: MetaKnightTileMap_21
+  - first:
+      213: -10281896363861659
+    second: MetaKnightTileMap_22
+  - first:
+      213: -1826252677202657418
+    second: MetaKnightTileMap_23
+  - first:
+      213: 2852604899638235935
+    second: MetaKnightTileMap_24
+  - first:
+      213: 8597038466617501565
+    second: MetaKnightTileMap_25
+  - first:
+      213: 2469075234517450172
+    second: MetaKnightTileMap_26
+  - first:
+      213: 6968959889310315027
+    second: MetaKnightTileMap_27
+  - first:
+      213: -8092876600131993868
+    second: MetaKnightTileMap_28
+  - first:
+      213: -7077296290327365158
+    second: MetaKnightTileMap_29
+  - first:
+      213: 1357520737078036477
+    second: MetaKnightTileMap_30
+  - first:
+      213: -5343769194056498395
+    second: MetaKnightTileMap_31
+  - first:
+      213: 8109869835362380709
+    second: MetaKnightTileMap_32
+  - first:
+      213: 7351329268337463481
+    second: MetaKnightTileMap_33
+  - first:
+      213: 4808088646603481795
+    second: MetaKnightTileMap_34
+  - first:
+      213: -6265325444226980862
+    second: MetaKnightTileMap_35
+  - first:
+      213: -3178121042374315319
+    second: MetaKnightTileMap_36
+  - first:
+      213: 1753036767843288758
+    second: MetaKnightTileMap_37
+  - first:
+      213: 4392610910235738169
+    second: MetaKnightTileMap_38
+  - first:
+      213: -6676027670758122823
+    second: MetaKnightTileMap_39
+  - first:
+      213: 5866334255257328694
+    second: MetaKnightTileMap_40
+  - first:
+      213: 6292429821440601580
+    second: MetaKnightTileMap_41
+  - first:
+      213: -1232137650256237558
+    second: MetaKnightTileMap_42
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MetaKnightTileMap_0
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 388
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f10b5c40b4bbd4189f6f9432964b3d
+      internalID: -3455532303342512983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_1
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 390
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11dec7e16b20204ab3e7055af490087
+      internalID: -3476584478150840455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_2
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 388
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65b6bb963bb3e74681601b73d81e910
+      internalID: -15000360684086126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_3
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 388
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a181e2e4a6d4b14196442af091494da
+      internalID: 6013663030032336637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_4
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 390
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ad7118b9155a3438c414f711630424
+      internalID: 7426282038076203273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_5
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 388
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465814aa1b68fc0458a15b1f1e930044
+      internalID: -4517229516211439418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_6
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 390
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075052b186d7cd24e8553921f440996d
+      internalID: 524648272559485875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_7
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 390
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7763394bd7b179a41ae6c280f1637496
+      internalID: 1692403805440779762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_8
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 390
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4a983cbc5573b4783a07667bd229b0
+      internalID: 4675693630734641236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_9
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 390
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33bf25658ac60794090ac4d0fe37028e
+      internalID: 5037255684963458682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_10
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 390
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b07d5f5b4dccc489e25c4a19ba35c6
+      internalID: 7423207026636882505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_11
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 390
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a15b1750f5b8e4686c3e47521e66ef
+      internalID: -5605436411295312442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_12
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 388
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645b1dca0a9b39d4caa6057978eaec1c
+      internalID: -3612365912061390550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 388
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6b01176a2a5764cb2060373c2899ff
+      internalID: 5683961552460927292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_14
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 390
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e1b7bb6b043ad4ea8548b9f5219732
+      internalID: 2612483733610008797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_15
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 359
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13eb07c1730bbbc4585d8cdf059993fb
+      internalID: -7654132057646354339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 348
+        width: 184
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4e5c27bac372e4fa6b846482a8c9b7
+      internalID: 3692406423177741276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_17
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 344
+        width: 63
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2bbfdd2de6e78e49bcceeee6de608f3
+      internalID: -239120142657784924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_18
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 379
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4bab87ef4fdb6b4281196a35d061bf1
+      internalID: 3811322872250222791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_19
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 378
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40b32e158cb56745b091cbd4f00cf57
+      internalID: 6819618183923453847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_20
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 377
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed04a5ed191b2c54e9481a8ebb5302cb
+      internalID: -5122753504535148962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_21
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 379
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838df84a6795a0b4db152ba65f294251
+      internalID: -5723058433908696270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_22
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 379
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f49b0f6c53d0c4bb43b02ea7554836
+      internalID: -10281896363861659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_23
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 379
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1860f568c520854ea009a52e0478fba
+      internalID: -1826252677202657418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_24
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 377
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f998eae217d77714e9720b8b983b7454
+      internalID: 2852604899638235935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_25
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 379
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2b69224e151fa4aa74abeb34dba9cc
+      internalID: 8597038466617501565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_26
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 379
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a3bdca3c286a841831638e8eaf4401
+      internalID: 2469075234517450172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_27
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 379
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee432805252668f4d85fea95e17a9068
+      internalID: 6968959889310315027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_28
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 379
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb56087545b05e44a4c0bc4f8bbb6f2
+      internalID: -8092876600131993868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_29
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 362
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cfd6297ddd62ee48a7bb5819d9e2c01
+      internalID: -7077296290327365158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_30
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 368
+        width: 17
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70972b489e195248997c75e4946d1b3
+      internalID: 1357520737078036477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_31
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 368
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ed72778fbe2e442a30346d1cbe8ee7
+      internalID: -5343769194056498395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_32
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 368
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39017b595c7c70641b321c74b45c786c
+      internalID: 8109869835362380709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_33
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 367
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc6ca4c55f178543bbf50447cd482d2
+      internalID: 7351329268337463481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_34
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 368
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f79fcfe94ef454691eac6c713c7449
+      internalID: 4808088646603481795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_35
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 366
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f50d330b029a342ac34f941810ff31
+      internalID: -6265325444226980862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_36
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 368
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70374a32dd49bd45b9dc77685421dbf
+      internalID: -3178121042374315319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_37
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 368
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c426044fdc046174f86f02ddf1eb59d6
+      internalID: 1753036767843288758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_38
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 368
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f16caec4f473ed46b6ab4522004c8d9
+      internalID: 4392610910235738169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_39
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 368
+        width: 24
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a2559d72c0e764f9980971224a4a56
+      internalID: -6676027670758122823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_40
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 368
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1edeca3249806742996aa9744c6ebbc
+      internalID: 5866334255257328694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_41
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 366
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e318edd6af6c164f92b132ebcf86feb
+      internalID: 6292429821440601580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetaKnightTileMap_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 518
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c349e7068d31a5d47aad3798e8a98d87
+      internalID: -1232137650256237558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

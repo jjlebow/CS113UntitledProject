@@ -18,7 +18,7 @@ public class PlayerAttack : MonoBehaviour
     public float attackActiveTime;
     private float attackTimer;
     public static int strength = 15;
-    private float timeBtwAttack = 1f;   //time in between each attack
+    private float timeBtwAttack = 0.7f;   //time in between each attack
     private IEnumerator attackCooldownCoroutine;
 
     //consider a cancel bool value that puts all other states to false 
@@ -61,6 +61,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack()
     {
+    
         //StateManager.instance.attackCooldown = true;
         StateManager.instance.attackInitiate = true;
         StateManager.instance.isAttacking = true;
@@ -68,7 +69,7 @@ public class PlayerAttack : MonoBehaviour
         if(StateManager.instance.playerGrounded == true && StateManager.instance.stance == false)
         {
             StateManager.instance.playerState = StateManager.PlayerStates.HOLD;
-            Debug.Log("WE ARE HERE");
+            //Debug.Log("WE ARE HERE");
             player.m_Rigidbody2D.velocity = new Vector3(0,0,0);
         }
         if(StateManager.instance.directionalFacing == StateManager.Directional.UP)
@@ -90,7 +91,7 @@ public class PlayerAttack : MonoBehaviour
         }
         else if(StateManager.instance.directionalFacing == StateManager.Directional.NEUTRAL)
         {
-            Debug.Log("AND HERE");
+            //Debug.Log("AND HERE");
             player.playerAnim.SetInteger("attackDirection", 1);
             StartCoroutine(attackCooldownCoroutine);
             //attackTriggerNeutral.SetActive(true);

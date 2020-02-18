@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 	private PlayerController controller;
 	[HideInInspector]public float horizontal = 0f;
     public float runningSpeed = 20f;
-    private float timeBtwJump = 0.05f;
+    private float timeBtwJump = 0.05f;  
     public bool cantJump = false;
 
     //determines how many jumps the player has
@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 direction = new Vector2(0,-1);
     //this adjusts the length for the raycast that recognizes if grounded or not
-    private float raycastMaxDistance = 0.27f;
+    private float raycastMaxDistance = 0.32f; //this needs to change if you change the size of the player
     public float fallMultiplier;
     public float lowJumpMultiplier;
 

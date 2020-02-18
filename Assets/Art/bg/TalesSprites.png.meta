@@ -1,0 +1,2311 @@
+fileFormatVersion: 2
+guid: 379ee212c0e01dd4eb47c1ed0b3af221
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5091174939676278661
+    second: TalesSprites_0
+  - first:
+      213: 1944670401012040925
+    second: TalesSprites_1
+  - first:
+      213: -1782815689477826584
+    second: TalesSprites_2
+  - first:
+      213: -7857757989666689490
+    second: TalesSprites_3
+  - first:
+      213: -6684696109402071346
+    second: TalesSprites_4
+  - first:
+      213: -5436830132355108615
+    second: TalesSprites_5
+  - first:
+      213: -485890222318241856
+    second: TalesSprites_6
+  - first:
+      213: -8594917770049153950
+    second: TalesSprites_7
+  - first:
+      213: -4917636808063312694
+    second: TalesSprites_8
+  - first:
+      213: 5129948529723556822
+    second: TalesSprites_9
+  - first:
+      213: -28614027881694430
+    second: TalesSprites_10
+  - first:
+      213: 8493147508746499348
+    second: TalesSprites_11
+  - first:
+      213: 4710449160856130903
+    second: TalesSprites_12
+  - first:
+      213: 8285352433915777225
+    second: TalesSprites_13
+  - first:
+      213: 6068610229046372834
+    second: TalesSprites_14
+  - first:
+      213: -836503563564000189
+    second: TalesSprites_15
+  - first:
+      213: 1690829387349080801
+    second: TalesSprites_16
+  - first:
+      213: 7316234487936114095
+    second: TalesSprites_17
+  - first:
+      213: -8460216432639407072
+    second: TalesSprites_18
+  - first:
+      213: -5401139076502528689
+    second: TalesSprites_19
+  - first:
+      213: 5601097383297517129
+    second: TalesSprites_20
+  - first:
+      213: -8117926871389523900
+    second: TalesSprites_21
+  - first:
+      213: 8302943244334773101
+    second: TalesSprites_22
+  - first:
+      213: 3308981805226914489
+    second: TalesSprites_23
+  - first:
+      213: 7279230304300445901
+    second: TalesSprites_24
+  - first:
+      213: -6241616648432855391
+    second: TalesSprites_25
+  - first:
+      213: -8367862661772355729
+    second: TalesSprites_26
+  - first:
+      213: -6391347220041937239
+    second: TalesSprites_27
+  - first:
+      213: 6585832590981952487
+    second: TalesSprites_28
+  - first:
+      213: 5580625328628688274
+    second: TalesSprites_29
+  - first:
+      213: -2810958958268428915
+    second: TalesSprites_30
+  - first:
+      213: -5547292092153850817
+    second: TalesSprites_31
+  - first:
+      213: -1232344093330477398
+    second: TalesSprites_32
+  - first:
+      213: -8728179645805098969
+    second: TalesSprites_33
+  - first:
+      213: -1648135063888144318
+    second: TalesSprites_34
+  - first:
+      213: 7118857165199658297
+    second: TalesSprites_35
+  - first:
+      213: 408974622760580693
+    second: TalesSprites_36
+  - first:
+      213: -7617983279989164992
+    second: TalesSprites_37
+  - first:
+      213: -4039723278801985143
+    second: TalesSprites_38
+  - first:
+      213: 2254387473044954726
+    second: TalesSprites_39
+  - first:
+      213: 4496439381553980954
+    second: TalesSprites_40
+  - first:
+      213: -9019338531594303346
+    second: TalesSprites_41
+  - first:
+      213: -4082131137337729314
+    second: TalesSprites_42
+  - first:
+      213: -5012463928302228626
+    second: TalesSprites_43
+  - first:
+      213: -4536087832640434778
+    second: TalesSprites_44
+  - first:
+      213: -235630973674196394
+    second: TalesSprites_45
+  - first:
+      213: 5892163545014271652
+    second: TalesSprites_46
+  - first:
+      213: -8175136212413340270
+    second: TalesSprites_47
+  - first:
+      213: -3996995047440438437
+    second: TalesSprites_48
+  - first:
+      213: -1079350613417075672
+    second: TalesSprites_49
+  - first:
+      213: 7620235554800771111
+    second: TalesSprites_50
+  - first:
+      213: 5833280463595245808
+    second: TalesSprites_51
+  - first:
+      213: 3290174104077178622
+    second: TalesSprites_52
+  - first:
+      213: -2409036394207419596
+    second: TalesSprites_53
+  - first:
+      213: -4977406079628653784
+    second: TalesSprites_54
+  - first:
+      213: -8405148445945286405
+    second: TalesSprites_55
+  - first:
+      213: 172468880992449304
+    second: TalesSprites_56
+  - first:
+      213: 8929934940060858646
+    second: TalesSprites_57
+  - first:
+      213: -6597967830870936767
+    second: TalesSprites_58
+  - first:
+      213: 8213648067902046420
+    second: TalesSprites_59
+  - first:
+      213: -4935060809041465939
+    second: TalesSprites_60
+  - first:
+      213: 2245143072168873174
+    second: TalesSprites_61
+  - first:
+      213: 7847786480168339021
+    second: TalesSprites_62
+  - first:
+      213: -5151718877326034489
+    second: TalesSprites_63
+  - first:
+      213: -4154379537820378894
+    second: TalesSprites_64
+  - first:
+      213: 1928565038361451177
+    second: TalesSprites_65
+  - first:
+      213: -6085531418592874634
+    second: TalesSprites_66
+  - first:
+      213: -4392203870250085071
+    second: TalesSprites_67
+  - first:
+      213: 5405227930695094669
+    second: TalesSprites_68
+  - first:
+      213: -5655943779619044320
+    second: TalesSprites_69
+  - first:
+      213: -7795330138230850790
+    second: TalesSprites_70
+  - first:
+      213: -2566036733916334083
+    second: TalesSprites_71
+  - first:
+      213: -264767766956016346
+    second: TalesSprites_72
+  - first:
+      213: -1338241049106340468
+    second: TalesSprites_73
+  - first:
+      213: -3853861372715260489
+    second: TalesSprites_74
+  - first:
+      213: -5149142760212865892
+    second: TalesSprites_75
+  - first:
+      213: -6926238691909149989
+    second: TalesSprites_76
+  - first:
+      213: 7346233168718121238
+    second: TalesSprites_77
+  - first:
+      213: 1426799375326890983
+    second: TalesSprites_78
+  - first:
+      213: -1234130589802012288
+    second: TalesSprites_79
+  - first:
+      213: 8133866731049044290
+    second: TalesSprites_80
+  - first:
+      213: -7094789337938839681
+    second: TalesSprites_81
+  - first:
+      213: 1481558647790108673
+    second: TalesSprites_82
+  - first:
+      213: -3084927359388313460
+    second: TalesSprites_83
+  - first:
+      213: 8356408720955087030
+    second: TalesSprites_84
+  - first:
+      213: 46251455684323770
+    second: TalesSprites_85
+  - first:
+      213: -2273666743065656961
+    second: TalesSprites_86
+  - first:
+      213: 6232403003972999161
+    second: TalesSprites_87
+  - first:
+      213: -6641124875410677983
+    second: TalesSprites_88
+  - first:
+      213: -302633612245600950
+    second: TalesSprites_89
+  - first:
+      213: -588713446150809053
+    second: TalesSprites_90
+  - first:
+      213: 416597876891355409
+    second: TalesSprites_91
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 85
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TalesSprites_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 368
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a874a9519efb046a5ff1f02a517cb4
+      internalID: 5091174939676278661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 368
+        width: 55
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2aaa62e8bb600f42ac4277ad134d385
+      internalID: 1944670401012040925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 360
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861e085a5bf5f8f4a865b8f4e43dd0dc
+      internalID: -1782815689477826584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_3
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 360
+        width: 66
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9acd9692dcb634db4ca090fc84476f
+      internalID: -7857757989666689490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_4
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 360
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dfe00c74abda5498b5b5c63b54a1d2
+      internalID: -6684696109402071346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_5
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 360
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55c4121aa885684fad9eb3f0afd6898
+      internalID: -5436830132355108615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_6
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 360
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd1088df5bd4b04299f4b850faf0526
+      internalID: -485890222318241856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_7
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 360
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8912a7135e5a10c4fb17b1b382564bb0
+      internalID: -8594917770049153950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_8
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 360
+        width: 27
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1e61f037b83da4e92528110813629f
+      internalID: -4917636808063312694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_9
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 360
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b73d62337ac4714fbf25cebca34db5a
+      internalID: 5129948529723556822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_10
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 360
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14dff264a39d7e47a3c08f25273d691
+      internalID: -28614027881694430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_11
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 360
+        width: 51
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f052ac96cd7944daa85cd510434fc8
+      internalID: 8493147508746499348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_12
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 360
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27efaa7e889b1434a81351d08580580f
+      internalID: 4710449160856130903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_13
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 360
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a288926ec9ee216459c371367971d033
+      internalID: 8285352433915777225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_14
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 360
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc73a062c06a26f48ac938751f88dcaa
+      internalID: 6068610229046372834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_15
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 360
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0be46f2940e854e854b213d21e59d1
+      internalID: -836503563564000189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_16
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 360
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcef222a8d61a9c489c8789c9926686e
+      internalID: 1690829387349080801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_17
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 360
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32706b721eb0c1c43a2b3b3ad53c2f17
+      internalID: 7316234487936114095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_18
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 360
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd973b70fbd7434db39f4e8606b5da7
+      internalID: -8460216432639407072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 301
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee16792a8cad2a40b0e54a894958af9
+      internalID: -5401139076502528689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_20
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 301
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079a5d30e6dd0fe4184ac5c7d3472452
+      internalID: 5601097383297517129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 301
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63142912465d43f438ca491b78024f32
+      internalID: -8117926871389523900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_22
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 301
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34eed4ae228f4c48b6e94733e5418a4
+      internalID: 8302943244334773101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_23
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 301
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98dcdeaa715fd1d418d541863c5043a9
+      internalID: 3308981805226914489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_24
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 301
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb0ae09f569760469aee073ff240653
+      internalID: 7279230304300445901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_25
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 301
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bba423a284f3d14ba8969c1751a6eab
+      internalID: -6241616648432855391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_26
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 301
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e59ea861cb22f644b34d0d1fb5d6621
+      internalID: -8367862661772355729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_27
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 301
+        width: 67
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400606021394f2041a9f752904f0e151
+      internalID: -6391347220041937239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_28
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 301
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d13319fd48ac4e43b62b702d16e306a
+      internalID: 6585832590981952487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_29
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 301
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1e8a81a20f2914c9045b10f74803eb
+      internalID: 5580625328628688274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_30
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 301
+        width: 53
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86853372f593e1849a595706af97c1ed
+      internalID: -2810958958268428915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_31
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 301
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0503dd0df3eff0d4c9b5ec74cd326916
+      internalID: -5547292092153850817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_32
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 301
+        width: 61
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b013b878e82b94e99ad69c2c7afc02
+      internalID: -1232344093330477398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_33
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 301
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307cbccd59592e34eb7200fdeea519f0
+      internalID: -8728179645805098969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_34
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 301
+        width: 57
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eaebceca525bee4caff32715d258353
+      internalID: -1648135063888144318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_35
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 301
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa42900e53b588240bc8fa1a383e5e8d
+      internalID: 7118857165199658297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_36
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 301
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00dd27f2bb45d34d93e40e85dd77354
+      internalID: 408974622760580693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_37
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 301
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63a5c5e8035686448c902ea85337c69
+      internalID: -7617983279989164992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_38
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 236
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7d016692f3efd47819063a989539b9
+      internalID: -4039723278801985143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_39
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 236
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc64f4fcb2ccb0448b3fa9e2961733d9
+      internalID: 2254387473044954726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_40
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 236
+        width: 78
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6a763c75a885a4b88379026850afd9
+      internalID: 4496439381553980954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_41
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 236
+        width: 74
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6eb0d4dacb41d64cad765bdd6d4f99f
+      internalID: -9019338531594303346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_42
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 236
+        width: 66
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c02fc6a038bf634baa8e8f301b9b469
+      internalID: -4082131137337729314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_43
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 236
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d428dc5e6363b438d16987a8a16d8f
+      internalID: -5012463928302228626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_44
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 236
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f88ece1410566c449bbe59d3aa2e87d
+      internalID: -4536087832640434778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_45
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 236
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4464f714b4fce9a4fb60ed43931e84cb
+      internalID: -235630973674196394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_46
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 236
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a1b0ffaf9f29642ae6f43f1f07a8a2
+      internalID: 5892163545014271652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_47
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 236
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddddcdc8c6407a458f04ddd74fbfca0
+      internalID: -8175136212413340270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_48
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 236
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3f5b39926ba0443a3c7fec75a0f159
+      internalID: -3996995047440438437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_49
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 236
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd5ed462b856494793736f416c7d79a
+      internalID: -1079350613417075672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_50
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 236
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938500c634167114292c9f987f540f03
+      internalID: 7620235554800771111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_51
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 236
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a0d93108102ac4bb8d511411587698
+      internalID: 5833280463595245808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_52
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 236
+        width: 60
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12c6a7777ff3f8499b08a515b1f8e90
+      internalID: 3290174104077178622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_53
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 236
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5975115a6a3396d4cb992643c81803a8
+      internalID: -2409036394207419596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_54
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 166
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed8f104e1dba0a4084bcec1d18b1975
+      internalID: -4977406079628653784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_55
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 166
+        width: 63
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87684d03d72d304468db134e9d86ad4e
+      internalID: -8405148445945286405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_56
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 166
+        width: 47
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa990d90913fe0941b50e44ffe71037d
+      internalID: 172468880992449304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_57
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 166
+        width: 65
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f9e348bc93c3249b9df79a3b16bdad
+      internalID: 8929934940060858646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_58
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 165
+        width: 66
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea89a5ecb1e32c4ca0dfe093eb8dd69
+      internalID: -6597967830870936767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_59
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 165
+        width: 62
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe2bbf63f1e2864f8884bac0097235f
+      internalID: 8213648067902046420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_60
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 165
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050523573699edd45bc767cda1e1c74d
+      internalID: -4935060809041465939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_61
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 165
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9c0c301f559a244843537f9ad67ba1
+      internalID: 2245143072168873174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_62
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 165
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0927ebc50d73fac41a6706c7c0f84945
+      internalID: 7847786480168339021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_63
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 165
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d910de32b899ce4a91d4d309e24e001
+      internalID: -5151718877326034489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_64
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 165
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70074ed150d25984bac99827eabb80ac
+      internalID: -4154379537820378894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_65
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 165
+        width: 70
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc7c83fa993cfe4ab62b4171fc78d9f
+      internalID: 1928565038361451177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_66
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 165
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68873cc1b4144074a8d02d3cc6d9dee3
+      internalID: -6085531418592874634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_67
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 165
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b155256b3a1c4140a41dcb709188a77
+      internalID: -4392203870250085071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_68
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 165
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbe9d87ba5c4d347a4c07335aadf555
+      internalID: 5405227930695094669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_69
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 165
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c6fa680c5eef84c8ae6b8ff99f0255
+      internalID: -5655943779619044320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_70
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 95
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d862384f8fdf6947b22d828ac8d5161
+      internalID: -7795330138230850790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_71
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 95
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b50745fbcf4cc4d888e63e3b7f25df
+      internalID: -2566036733916334083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_72
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 95
+        width: 60
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a5de74b1c42bb44a9051207a3060c9
+      internalID: -264767766956016346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_73
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 95
+        width: 41
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84abcbcf63a3df42b25f218fc629265
+      internalID: -1338241049106340468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_74
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 95
+        width: 67
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6813797e269247542bf9d0b75b75159c
+      internalID: -3853861372715260489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_75
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 95
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a136073bdd71514c91f5d6e9cf75799
+      internalID: -5149142760212865892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_76
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 95
+        width: 66
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbdc1291d08892469a640b665ba173c
+      internalID: -6926238691909149989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_77
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 95
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6adaee535eacf4a814ce7d24917b4c
+      internalID: 7346233168718121238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_78
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 95
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa42861c007abc40ba279545c9db5f3
+      internalID: 1426799375326890983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_79
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 95
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a993e838cd25b4c8b5bcdd1dbec961
+      internalID: -1234130589802012288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_80
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 95
+        width: 62
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d089b21d0ef674ea184f6fa98fa684
+      internalID: 8133866731049044290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_81
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 95
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66659beda977b6b4299e19551138e417
+      internalID: -7094789337938839681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_82
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 95
+        width: 61
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17074da6da119d94f8bb8ed2c2b8c4c8
+      internalID: 1481558647790108673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_83
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 95
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0dcc096529b7f24d9eb6807755d271f
+      internalID: -3084927359388313460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_84
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 95
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a748b08edb0aa48bfcf41b86343dd9
+      internalID: 8356408720955087030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_85
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 95
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6fa1604dd76ac47af0bdfb1c4585b7
+      internalID: 46251455684323770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_86
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 95
+        width: 59
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40b79b484b7ed54e8111cc79bebe192
+      internalID: -2273666743065656961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_87
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 41
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d2b0c801b44ff40ae2e47db11baeba
+      internalID: 6232403003972999161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_88
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 41
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ca7d2f9da22264db6824e473209210
+      internalID: -6641124875410677983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_89
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 41
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3b3000b365646459ccb7e4b15999f5
+      internalID: -302633612245600950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_90
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 41
+        width: 64
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304c5d36a54f1af41b5814616e00d6fa
+      internalID: -588713446150809053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TalesSprites_91
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 98
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e38efd0205a5fb4fa3583757261adbc
+      internalID: 416597876891355409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

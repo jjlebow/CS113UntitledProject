@@ -15,7 +15,7 @@ public class StateManager : MonoBehaviour
     public bool isJumping = false;
     public bool crouch = false;
     public bool cantDamage = false;
-    public bool faceRight = true;
+    public bool faceRight = false;
     public bool knockback = false;
     public bool attackContinue = false;
     public bool attackInitiate = false;

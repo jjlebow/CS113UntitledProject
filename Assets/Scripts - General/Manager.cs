@@ -5,14 +5,14 @@ using UnityEngine;
 public class Manager : MonoBehaviour
 {  
     private PlayerController player;
-    private Boss boss;
+    private FirstBoss boss;
 
     public GameObject GameOverPanel;
     public GameObject VictoryPanel;
 
     private void Awake()
     {
-        boss = GameObject.FindGameObjectWithTag("Boss").GetComponent<Boss>();
+        boss = GameObject.FindGameObjectWithTag("Boss").GetComponent<FirstBoss>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();    
     }
     private void Update()
@@ -22,7 +22,7 @@ public class Manager : MonoBehaviour
         {
             GameOver();
         }
-        else if(boss.isDead & StateManager.instance.playerState != StateManager.PlayerStates.DEAD)
+        else if(boss.boss.isDead && StateManager.instance.playerState != StateManager.PlayerStates.DEAD)
         {
             Victory();
         }

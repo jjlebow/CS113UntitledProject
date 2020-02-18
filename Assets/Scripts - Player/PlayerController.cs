@@ -159,6 +159,10 @@ public class PlayerController : MonoBehaviour
         playerAnim.SetBool("Landing", StateManager.instance.hasLanded);
         playerAnim.SetBool("cantDamage", StateManager.instance.cantDamage);
         playerAnim.SetBool("AttackContinue", StateManager.instance.attackContinue);
+        if((StateManager.instance.faceRight && m_Rigidbody2D.velocity.x < 0) || (!StateManager.instance.faceRight && m_Rigidbody2D.velocity.x > 0))
+            playerAnim.SetBool("WalkBackwards", true);
+        else
+            playerAnim.SetBool("WalkBackwards", false);
 
         //anim.SetBool("Landing", false);    //ensures that landing animation is not true for any frame past the frame that the character lands
     }
